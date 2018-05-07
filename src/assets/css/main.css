@@ -1,0 +1,25 @@
+/* CSS Document */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;outline-style:none;/*FF*/}
+body{line-height:1;}
+li{list-style:none;}
+::-webkit-scrollbar {
+-webkit-appearance: none;       /*可去除系统默认的样式*/
+width: 7px;                           /*滚动条宽度*/
+}
+::-webkit-scrollbar-thumb {    /*当焦点不在当前区域滑块的状态*/
+border-radius: 4px;
+background-color: rgba(0,0,0,.5);
+-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+html,body{margin:0;padding:0;}
+a{text-decoration:none;margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;color:#000;}
+a:hover,a:focus{text-decoration:none;bblr:expression(this.onFocus=this.blur());/*IE*/outline-style:none;/*FF*/color:none;}
+table{border-collapse:collapse;border-spacing:0;}
+input,select{vertical-align:middle;}
+/*css为clearfix，清除浮动*/
+.clear::before,.clear::after{content:"";height:0;line-height:0;display:block;visibility:hidden;clear:both;}
+.clear:after{clear:both;}
+.clear{*zoom:1;/*IE/7/6*/}
+
+.left{float:left;}
+.right{float:right;}
