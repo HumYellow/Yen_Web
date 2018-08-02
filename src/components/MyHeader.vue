@@ -1,18 +1,19 @@
 <template>
 	<div class="header" id="header">
-		<ul class="menu clear">
-			<li><router-link to="/">Home</router-link></li>
-			<li><router-link to="/ourservices">Our Services</router-link></li>
-			<li><router-link to="/aboutus">About Us</router-link></li>
-			<li><router-link to="/alphatownMod">Alpha Town</router-link></li>
-			<li><router-link to="/media">Media</router-link></li>
-			<li><router-link to="/contactus">Contact Us</router-link></li>
-		</ul>
-		<div class="langChange clear">
-			<div @click="linkTo('en')" class="langMod">En</div>
-			<div @click="linkTo('vn')" class="langMod">Vn</div>
-			<div @click="look" class="langMod">我看看而已</div>
+		<div class="loginNav">
+			<div class="loginMod"><span>登陆</span>\<span>注册</span></div>
 		</div>
+		<div class="menu">
+			<ul class="clear">
+				<li><router-link to="/">Home</router-link></li>
+				<li><router-link to="/ourservices">Our Services</router-link></li>
+				<li><router-link to="/aboutus">About Us</router-link></li>
+				<li><router-link to="/alphatownMod">Alpha Town</router-link></li>
+				<li><router-link to="/media">Media</router-link></li>
+				<li><router-link to="/contactus">Contact Us</router-link></li>
+			</ul>
+		</div>
+		<a class="logo"><img width="80" :src="this.logoUrl" /></a>
 	</div>
 </template>
 <script type="text/javascript">
@@ -31,7 +32,8 @@ export default{
 				alphaTownMod:'',
 				media:'',
 				contactUs:'',
-			}
+			},
+			logoUrl:global.localPath+'/logo.png'
 		}
 	},
 	computed:{
@@ -61,10 +63,14 @@ export default{
 }
 </script>
 <style lang="scss" type="text/css">
-.header{background:green;height:50px;color:#fff;position:relative}
-.menu{text-align:center; width:100%;}
-.menu li{display:inline-block;}
-.menu li a{color:#fff;}
+.header{position:relative}
+.loginNav{background:#444;color:#fff;height:50px; line-height:50px;}
+.loginMod{float:right; margin-right:5vw;}
+.loginMod span{margin:0 10px;}
+.menu{text-align:right; margin-right:5vw; color:#000;height:60px;line-height:60px;}
+.menu li{display:inline-block; padding:0 10px;}
+.menu li a{}
+.logo{position:absolute; left:20px;top:0;}
 .langChange{position:absolute;right:20px; top:20px;}
 .langMod{float:left; margin:0 5px;}
 </style>

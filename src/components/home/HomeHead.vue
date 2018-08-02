@@ -34,7 +34,7 @@ export default {
 	    	src:this.staticPath+"bn_2.jpg"
 	    }, {
 	    	src:this.staticPath+"bn_3.jpg"
-	    },]
+	    }]
 	  }
 	},
 	components: {

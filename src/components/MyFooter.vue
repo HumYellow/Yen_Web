@@ -19,7 +19,7 @@
 	</div>
 </template>
 <style type="text/css">
-	.footer{background:green;position: fixed;bottom:0;left:0; width:100%;color:#fff;z-index:1; height:100px;}
+	.footer{background:#444;width:100%;color:#fff;z-index:1; height:100px;}
 	.footerMod{float:left;}
 
 </style>

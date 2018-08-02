@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import store from '@/store.js'
 
-import index from '@/page/index'
 import zero from '@/page/zero'
 import home from '@/page/home'
 import ourServices from '@/page/ourServices'
@@ -14,7 +13,7 @@ import contactUs from '@/page/contactUs'
 Vue.use(Router)
 export default new Router({
   mode: 'history',
-  base:'alphatown',
+  base:'swallow',
   routes: [
     {
       path:'*',
@@ -22,14 +21,10 @@ export default new Router({
     },
     {
       path:'/en',
-      component: index,
+      component: home,
       children:[
           {
             path: '/',
-            component: home
-          },
-          {
-            path: 'home',
             component: home
           },
           {
@@ -56,14 +51,10 @@ export default new Router({
     },{
       path:'/vn',
       name: 'Vn',
-      component: index,
+      component: home,
       children:[
           {
             path: '/',
-            component: home
-          },
-          {
-            path: 'home',
             component: home
           },
           {

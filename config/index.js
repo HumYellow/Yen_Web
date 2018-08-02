@@ -45,7 +45,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/alphatown/',//打包后静态资源路径前缀
+    assetsPublicPath: '/swallow/',//打包后静态资源路径前缀
 
     /**
      * Source Maps
