@@ -3,7 +3,9 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 // 这里定义初始值
 let state = {//lang定义语言,默认En,值只能是En/Cn/Vn
-    lang:"en"
+    lang:"en",
+    isLogin:false,
+    bodyLocking:false,
 };
 const mutations = {
     langChange(state,lang){

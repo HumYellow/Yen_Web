@@ -1,24 +1,27 @@
+<style>
+#app{width:100%;height:100%;background:#f8f8f8;min-width:960px;}
+</style>
 <template>
-  <div id="app">
-    <MyHeader></MyHeader>
+  <div id="app"  rel="app">
     <router-view/>
     <MyFooter></MyFooter>
   </div>
 </template>
 <script>
 import Vue from 'vue'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
 import {mapGetters,mapActions} from 'vuex' 
 import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
 
-import MyHeader from '@/components/MyHeader'
 import MyFooter from '@/components/MyFooter'
 import './assets/css/main.css'
 export default {
   name: 'App',
+  data(){
+    return{
+      bodyLocking:this.$store.state.bodyLocking
+    }
+  },
   components:{
-    MyHeader,
     MyFooter,
   },
   data () {
@@ -27,6 +30,7 @@ export default {
     }
   },
   mounted:function(){
+    this.bodyLocking = this.$store.state.bodyLocking
     
   },
   methods:{
@@ -34,5 +38,3 @@ export default {
 }
 </script> 
 
-<style>
-</style>

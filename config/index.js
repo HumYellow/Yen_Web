@@ -11,7 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/api/': 'http://localhost:8080/'
+        '/api/': {
+            target: 'http://localhost:8031/openapi/v1/',
+            changeOrigin: true,
+            pathRewrite: {
+             '^/api/': ''
+            }
+        }
     },
 
     // Various Dev Server settings
@@ -45,7 +51,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/swallow/',//打包后静态资源路径前缀
+    assetsPublicPath: '/',//打包后静态资源路径前缀
 
     /**
      * Source Maps

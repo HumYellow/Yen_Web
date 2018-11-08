@@ -1,17 +1,20 @@
 /* CSS Document */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;outline-style:none;/*FF*/}
-body{line-height:1;box-sizing:border-box; -webkit-box-sizing: border-box}
+body{line-height:1;box-sizing:border-box; -webkit-box-sizing: border-box;word-wrap:break-word;
+font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;}
 li{list-style:none;}
 ::-webkit-scrollbar {
 -webkit-appearance: none;       /*可去除系统默认的样式*/
 width: 7px;                           /*滚动条宽度*/
 }
+a{cursor:pointer}
 ::-webkit-scrollbar-thumb {    /*当焦点不在当前区域滑块的状态*/
 border-radius: 4px;
 background-color: rgba(0,0,0,.5);
 -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-html,body{margin:0;padding:0;}
+img{display:block}
+html,body{margin:0;padding:0;width:100%;}
 a{text-decoration:none;margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;color:#000;}
 a:hover,a:focus{text-decoration:none;bblr:expression(this.onFocus=this.blur());/*IE*/outline-style:none;/*FF*/color:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -23,3 +26,20 @@ input,select{vertical-align:middle;}
 
 .left{float:left;}
 .right{float:right;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+.mt50{margin-top:50px;}
+.ml10{margin-top:10px;}
+.ml20{margin-top:20px;}
+.ml30{margin-top:30px;}
+.ml40{margin-top:40px;}
+.ml50{margin-top:50px;}
+
+.bodyCenter{width:1280px; margin:0 auto;}
+
+/* select{appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;} */
