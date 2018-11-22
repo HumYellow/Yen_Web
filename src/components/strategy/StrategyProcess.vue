@@ -1,5 +1,5 @@
 <style type="text/css">
-.processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;}
+.processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;width:16px;height:18px;margin:0 auto 10px;}
 .processMod{float:left;width:33%;}
 .processMod:nth-child(2){margin:0 .5%;}
 .processMod .processModBg{height:250px;}
@@ -21,7 +21,6 @@
 .processMod:nth-child(2) a:nth-child(5){border-right:1px solid #dfece7;}
 .processMod:nth-child(3) a{width:50%;border-color:#dbe5e6;padding:53px 0;}
 
-.processMod a .icon{width:16px;height:16px;margin:0 auto 10px;}
 .processMod a .text{font-size:14px; height:16px;line-height:16px;}
 .processMod:nth-child(1) a:nth-child(2) .icon{background-position:-48px 1px;}
 .processMod:nth-child(1) a:nth-child(3) .icon{background-position:-65px 1px;}

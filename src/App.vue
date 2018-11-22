@@ -1,5 +1,5 @@
 <style>
-#app{width:100%;height:100%;background:#f8f8f8;min-width:960px;}
+#app{width:100%;height:100%;background:#f8f8f8;min-width:1280px;}
 </style>
 <template>
   <div id="app"  rel="app">

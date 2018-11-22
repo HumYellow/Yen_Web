@@ -229,8 +229,8 @@ module.exports={
 		connectUs:'Liên hệ với chúng tôi',
 		businessCooperation:'Công ty liên kết',
 		joinImmediately:'Đăng ký ngay',
-		disclaimer:'Miễn truy cứu trách nhiệm: Một bộ phận thông tin của trang web là do khách hàng tự đăng tải lên,<br /> nếu chủ sở hữu phát hiện tình trạng sai hay lỗi biến dạng hình ảnh, vui lòng liên hệ với chúng tôi.'
-	
+		disclaimer:'Miễn truy cứu trách nhiệm: Một bộ phận thông tin của trang web là do khách hàng tự đăng tải lên,<br /> nếu chủ sở hữu phát hiện tình trạng sai hay lỗi biến dạng hình ảnh, vui lòng liên hệ với chúng tôi.',
+		disclaimer2:'Bản quyền trang web yentroi.com thuộc về công ty Yến trời'
 	},
   }
 }
