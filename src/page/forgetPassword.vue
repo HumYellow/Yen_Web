@@ -139,7 +139,7 @@ export default {
 			this.$post('/login/sendDynamicCode2',{
 				'phone':this.phone
 			}).then((res) => {
-				if(res.msg == "success"){
+				if(res.errcode == '0000'){
 					this.verifyGeting = true
 					this.$swallow.setCookie('verifyGeting',true,1/60)
 					this.countdown(59000)

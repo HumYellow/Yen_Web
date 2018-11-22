@@ -21,10 +21,10 @@
     color: #dbdbdb;
 }
 
-.readingProtocol{color:#EBEBEB;margin:10px 40px 30px;color:#666666;font-size:12px;}
-.readingProtocol p{float:left;margin-left:10px;}
-.readingProtocol a.selectMod{width:14px;height:14px;display:block;margin-top:-1px;float:left;}
-.readingProtocol a{color:#3FBB87;}
+.readingProtocol{color:#EBEBEB;margin:10px 40px 30px;color:#666666;font-size:12px;display:flex;align-items: center;}
+.readingProtocol p{margin-left:10px;line-height:16px;align-self: flex-start;}
+.readingProtocol a.selectMod{width:14px;height:14px;display:block;margin-top:-1px;}
+.readingProtocol a{color:#3FBB87;align-self: flex-start;padding:5px 0;}
 </style>
 <template>
 	<div id="register">
@@ -161,7 +161,7 @@ export default {
 			this.$post('/login/sendDynamicCode',{
 				'phone':this.phone
 			}).then((res) => {
-				if(res.msg == "success"){
+				if(res.errcode == '0000'){
 					this.verifyGeting = true
 					this.$swallow.setCookie('verifyGeting',true,1/60)
 					this.countdown(59000)

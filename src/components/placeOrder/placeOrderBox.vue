@@ -12,7 +12,7 @@
 .placeOrderMod input.textBox{border:0;outline:none;padding:5px;width:85%;}
 .placeOrderBox .selectMod{padding:5px 10px;}
 .placeOrderMod .keyName{float:left;width:30%;color:#777;font-size:13px;margin-top:1px;}
-.placeOrderMod .formBox{float:left;width:70%;text-align:center;font-size:14px;}
+.placeOrderMod .formBox{float:left;width:70%;font-size:14px;}
 .placeOrderBox select{background:#fff;border:none;float:left;width:25%;box-sizing: border-box;}
 .placeOrderBox .radioSelect{margin:0; margin-top:-2px;}
 .placeOrderBox .placeBtn{position:absolute;right:-52px;top:120px; cursor:pointer;display:block;}
@@ -23,30 +23,29 @@
 	<div id="placeOrderBox">
 		<div class="bodyCenter placeOrderBoxCenter clear">
 			<div class="placeOrderBox">
-					
 				<div class="placeOrderModBox clear">
 					<div class="placeOrderModBoxTitle">{{$t("message.placeOrder.phone")}}</div>
 					<div class="placeOrderMod">
-						<input @keyup.13="placeBtn()" onkeyup="value=value.replace(/[^\d]/g,'')" class="textBox" :placeholder="$t('message.placeOrder.phone')" v-model="placeData.phone" maxlength="10" />
+						<input @keyup.13="placeBtn()" onkeyup="value=value.replace(/[^\d]/g,'')" class="textBox"  v-model="placeData.phone" maxlength="10" />
 					</div>
 				</div>
 				<div class="placeOrderModBox clear">
 					<div class="placeOrderModBoxTitle">{{$t("message.placeOrder.name")}}</div>
 					<div class="placeOrderMod">
-						<input @keyup.13="placeBtn()" class="textBox" :placeholder="$t('message.placeOrder.name')" v-model="placeData.username" />
+						<input @keyup.13="placeBtn()" class="textBox" v-model="placeData.username" />
 					</div>
 				</div>
 				<div class="placeOrderModBox clear">
 					<div class="placeOrderModBoxTitle">{{$t("message.placeOrder.acreage")}}</div>
 					<div class="placeOrderMod">
-						<input @keyup.13="placeBtn()" onkeyup="value=value.replace(/[^\d]/g,'')" class="textBox" :placeholder="$t('message.placeOrder.acreage')" v-model="placeData.acreage" />㎡
+						<input @keyup.13="placeBtn()" onkeyup="value=value.replace(/[^\d]/g,'')" class="textBox" v-model="placeData.acreage" />㎡
 					</div>
 				</div>
 				<div class="placeOrderModBox clear">
 					<div class="placeOrderModBoxTitle">{{$t("message.placeOrder.houseType")}}</div>
 					<div class="placeOrderMod">
 						<div class="selectMod clear">
-							<span class="keyName">{{$t("message.placeOrder.houseType")}}</span>
+							<!-- <span class="keyName">{{$t("message.placeOrder.houseType")}}</span> -->
 							<div class="formBox">
 								<select v-model="placeData.houseType1">
 									<option selected value="1">1BR</option>
@@ -81,10 +80,10 @@
 					<div class="placeOrderModBoxTitle">{{$t("message.placeOrder.type")}}</div>
 					<div class="placeOrderMod">
 						<div class="selectMod clear">
-							<span class="keyName">{{$t("message.placeOrder.type")}}</span>
+							<!-- <span class="keyName">{{$t("message.placeOrder.type")}}</span> -->
 							<div class="formBox houseType">
 								<input @keyup.13="placeBtn()" v-model="placeData.type" class="radioSelect" type="radio" name="houseType" value="1" />
-								<span>{{$t("message.placeOrder.newHouse")}}</span>
+								<span style="margin-right:30px;">{{$t("message.placeOrder.newHouse")}}</span>
 								<input @keyup.13="placeBtn()" v-model="placeData.type" class="radioSelect" type="radio" name="houseType" value="2" />
 								<span>{{$t("message.placeOrder.rebuild")}}</span>
 							</div>
