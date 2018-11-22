@@ -1,6 +1,7 @@
 <style type="text/css">
 .myCenterSidebar{float:left; width:20%;box-sizing: border-box;padding:10px 0;background:#fff;box-shadow: 2px 1px 10px #B1B1B1}
 .myCenterSidebar .goBackCenter{color:#0cb46a;display:block;}
+.myCenterSidebar .sidebarMod.myCenterSidebarMod .sidebarModTitle{font-size:16px;color:#000;}
 .myCenterSidebar .sidebarMod{text-align:left;box-sizing: border-box;padding:20px 0;border-top:1px dashed #D8D8D8;}
 .myCenterSidebar .sidebarMod:nth-child(1){border:none;}
 .myCenterSidebar .sidebarMod .sidebarModTitle{color:#666;font-size:14px;background-position:20px 2px;background-size:15px auto;background-repeat:no-repeat;padding:5px 0 5px 50px;margin-bottom:5px;}
@@ -14,7 +15,7 @@
 </style>
 <template>
 	<div class="myCenterSidebar">
-		<div class="sidebarMod homeMod">
+		<div class="sidebarMod homeMod myCenterSidebarMod">
 			<router-link to="/myCenter" class="goBackCenter sidebarModTitle" id="goBackCenter">{{$t("message.myCenter.myCenterSidebar.personalHomePage")}}</router-link>
 		</div>
 		<div class="sidebarMod designMod">

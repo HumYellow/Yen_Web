@@ -1,10 +1,11 @@
 <style type="text/css">
-.processMod .processModBg ,.processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;}
+.processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;}
 .processMod{float:left;width:33%;}
 .processMod:nth-child(2){margin:0 .5%;}
-.processMod .processModBg{background-size:100% auto;height:250px;border-top:none;}
-.processMod:nth-child(2) .processModBg{background-position:0 -254px;}
-.processMod:nth-child(3) .processModBg{background-position:0 -508px;}
+.processMod .processModBg{height:250px;}
+.processMod:nth-child(1) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess1.png") no-repeat;background-size:100% 100%;}
+.processMod:nth-child(2) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess2.png") no-repeat;background-size:100% 100%;}
+.processMod:nth-child(3) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess3.png") no-repeat;background-size:100% 100%;}
 
 .processMod:nth-child(1){background-color:#fefff4;}
 .processMod:nth-child(2){background-color:#f9fffc;}
@@ -16,28 +17,28 @@
 .processMod:nth-child(3) a:hover{color:#4397a4;}
 .processMod a:last-child{border-right:1px solid;}
 .processMod:nth-child(1) a{width:25%;border-color:#edeee5;padding:53px 0;}
-.processMod:nth-child(2) a{width:25%;border-color:#dfece7;padding:15px 0;}
+.processMod:nth-child(2) a{width:25%;border-color:#dfece7;padding:15.7px 0;}
 .processMod:nth-child(2) a:nth-child(5){border-right:1px solid #dfece7;}
 .processMod:nth-child(3) a{width:50%;border-color:#dbe5e6;padding:53px 0;}
 
 .processMod a .icon{width:16px;height:16px;margin:0 auto 10px;}
 .processMod a .text{font-size:14px; height:16px;line-height:16px;}
-.processMod:nth-child(1) a:nth-child(2) .icon{background-position:-48px -603px;}
-.processMod:nth-child(1) a:nth-child(3) .icon{background-position:-65px -603px;}
-.processMod:nth-child(1) a:nth-child(4) .icon{background-position:-82px -603px;}
-.processMod:nth-child(1) a:nth-child(5) .icon{background-position:-99px -603px;}
+.processMod:nth-child(1) a:nth-child(2) .icon{background-position:-48px 1px;}
+.processMod:nth-child(1) a:nth-child(3) .icon{background-position:-65px 1px;}
+.processMod:nth-child(1) a:nth-child(4) .icon{background-position:-82px 1px;}
+.processMod:nth-child(1) a:nth-child(5) .icon{background-position:-99px 1px;}
 
-.processMod:nth-child(2) a:nth-child(2) .icon{background-position:-116px -603px;}
-.processMod:nth-child(2) a:nth-child(3) .icon{background-position:-134px -603px;}
-.processMod:nth-child(2) a:nth-child(4) .icon{background-position:-151px -603px; width:18px;}
-.processMod:nth-child(2) a:nth-child(5) .icon{background-position:-170px -603px; width:15px;}
-.processMod:nth-child(2) a:nth-child(6) .icon{background-position:-185px -603px;width:20px;}
-.processMod:nth-child(2) a:nth-child(7) .icon{background-position:-205px -603px;}
-.processMod:nth-child(2) a:nth-child(8) .icon{background-position:-222px -603px;width:20px;}
-.processMod:nth-child(2) a:nth-child(9) .icon{background-position:-242px -603px;}
+.processMod:nth-child(2) a:nth-child(2) .icon{background-position:-116px 1px;}
+.processMod:nth-child(2) a:nth-child(3) .icon{background-position:-134px 1px;}
+.processMod:nth-child(2) a:nth-child(4) .icon{background-position:-151px 1px; width:18px;}
+.processMod:nth-child(2) a:nth-child(5) .icon{background-position:-170px 1px; width:15px;}
+.processMod:nth-child(2) a:nth-child(6) .icon{background-position:-185px 1px;width:20px;}
+.processMod:nth-child(2) a:nth-child(7) .icon{background-position:-205px 1px;}
+.processMod:nth-child(2) a:nth-child(8) .icon{background-position:-222px 1px;width:20px;}
+.processMod:nth-child(2) a:nth-child(9) .icon{background-position:-242px 1px;}
 
-.processMod:nth-child(3) a:nth-child(2) .icon{background-position:-265px -628px;width:18px;}
-.processMod:nth-child(3) a:nth-child(3) .icon{background-position:-285px -603px;width:18px;}
+.processMod:nth-child(3) a:nth-child(2) .icon{background-position:-265px 1px;width:18px;}
+.processMod:nth-child(3) a:nth-child(3) .icon{background-position:-285px 1px;width:18px;}
 
 </style>
 <template>
@@ -61,7 +62,7 @@
 			<div class="processMod clear">
 				<div class="processModBg"></div>
 				<router-link to="/strategyList/5">
-					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.alter")}}alter</div>
+					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.alter")}}</div>
 				</router-link>
 				<router-link to="/strategyList/6">
 					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.waterPower")}}</div>

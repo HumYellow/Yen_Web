@@ -72,7 +72,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="subData" @click="subDataAjax">{{$t("message.home.freeReserve")}}</div>
+				<div class="subData" @click="subDataAjax">{{$t("message.placeOrder.toFreeReserve")}}</div>
 				<a @click="contactShow = !contactShow" class="closeContact">
 					<img width="100%" height="100%" src="/static/image/closeIcon.png"/>
 				</a>

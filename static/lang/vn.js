@@ -3,14 +3,14 @@ module.exports={
   message: {
 	menu:{
 		Home:'Trang chủ',
-		Design:'Thiết kế',
-		Company:'Công ty thi công',
-		Strategy:'Chiến lược',
-		Guarantee:'Bảo đảm',
+		Design:'Phong cách thiết kế',
+		Company:'Công ty thiết kế',
+		Strategy:'Phương án thi công',
+		Guarantee:'Chính sách bảo đảm',
 	},
 	login:{
 		login:'Đăng nhập',
-		register:'Đăng kí',
+		register:'Đăng ký',
 		phone:'Số điện thoại',
 		password:'Mật khẩu',
 		againPassword:'Vui lòng nhập lại mật khẩu',
@@ -21,16 +21,16 @@ module.exports={
 		forgetPassword:'Quên mật khẩu',
 		newUse:'Người dùng mới',
 		passwordError:'Mật khẩu tối thiểu 8 kí tự bao gồm cả chữ và số.',
-		submit:'Đăng lên',
+		submit:'Xác nhận',
 	},
 	tips:{
-		titleMsg:'Thông điệp',
-		ok:'được',
+		titleMsg:'Thông báo',
+		ok:'Xác nhận',
 		yes:'Đúng',
 		no:'Không',
 		contNull:'không được để trống',
 		passwordDifferent:'Mật khẩu không giống nhau',
-		success:'sự thành công',
+		success:'Đăng ký thành công',
 		noMore:'Bây giờ không có nhiều dữ liệu',
 		delectIt:'Bạn thực sự muốn xoá bỏ nó không?',
 	},
@@ -38,7 +38,7 @@ module.exports={
     	serviceProcess:'Quá trình phục vụ',
     	designScheme:'Thiết kế',
     	consultingPhone:'Điện thoại tư vấn',
-    	clickToView:'Nhấn vào xem',
+    	clickToView:'Xem thêm',
     	freeReserve:'Dự trữ tự do',
     	processImage:'/static/image/vnImage/process.png',
     	homeMenuImage1:'/static/image/homeMenuMod/vn/page_1.png',
@@ -50,10 +50,11 @@ module.exports={
     	name:'Họ tên',
 		phone:'Số điện thoại',
 		acreage:'Diện tích',
-		houseType:'Loại hình căn hộ',
-		type:'Loại hình',
-		newHouse:'Phòng',
-		rebuild:'Xây dựng lại',
+		houseType:'Loại hình',
+		type:'Mục đích',
+		newHouse:'Xây mới',
+		rebuild:'Cải tạo',
+		toFreeReserve:'Đăng ký',
 		pleaseChoose:'Hãy lựa chọn.',
 		pleaseEvaluation:'Hãy nhập vào đánh giá của ngài',
 		uploadPic:'Đang tải hình ảnh',
@@ -63,7 +64,7 @@ module.exports={
     aboutUs:{
     	inputCompanyName:'Tên Công ty',
     	inputContactName:'Số điện thoại',
-    	inputTelephoneNumber:'Tham gia ngay',
+    	inputTelephoneNumber:'Người liên hệ',
     },
     design:{
     	collection:'Bộ sưu tập',
@@ -105,8 +106,8 @@ module.exports={
     		alter:'Tháo dỡ',
     		waterPower:'Điện nước',
     		waterProof:'Chống thấm',
-    		masonry:'Lát nền ',
-    		woodwork:'Làm gỗ ',
+    		masonry:'Lát nền',
+    		woodwork:'Làm mộc',
     		paint:'Sơn tường ',
     		finish:'Hoàn tất',
     		more:'Thêm',
@@ -114,8 +115,8 @@ module.exports={
     		reside:'Vào ở',
     		all:'Tất cả',
     	},
-    	materialSelectionManual:'Sổ tay vật liệu',
-    	geomanticCulture:'Thi công phong thuỷ'
+    	materialSelectionManual:'Lựa chọn vật liệu',
+    	geomanticCulture:'Kiến thức phong thủy'
     },
     myCenter:{
     	myOrder:'Đơn hàng của tôi',
@@ -169,7 +170,7 @@ module.exports={
 	  		2:{
 	  			title:'2.Đồng ý thanh toán',
 	  			desc:'Nếu bạn hài lòng về hiệu quả thi công, vui lòng nhấn vào đây để thanh toán cho kì thứ 2.',
-	  			desc2:'Nếu bạn hài lòng về hiệu quả thi công, vui lòng nhấn vào đây để thanh toán cho kì thứ 2.',
+	  			desc2:'Thành công, vui lòng chờ xét duyệt.',
 	  			desc3:'Xét duyệt thành công.'
 	  		}
     	},
@@ -183,7 +184,7 @@ module.exports={
 	  		2:{
 	  			title:'2.Đồng ý thanh toán',
 	  			desc:'Nếu bạn hài lòng về hiệu quả thi công, vui lòng nhấn vào đây để thanh toán cho kì thứ 3.',
-	  			desc2:'Nếu bạn hài lòng về hiệu quả thi công, vui lòng nhấn vào đây để thanh toán cho kì thứ 3.',
+	  			desc2:'Thành công, vui lòng chờ xét duyệt.',
 	  			desc3:'Xét duyệt thành công.',
 	  		}
     	},
@@ -227,7 +228,7 @@ module.exports={
 		aboutUs:'Về chúng tôi',
 		connectUs:'Liên hệ với chúng tôi',
 		businessCooperation:'Công ty liên kết',
-		joinImmediately:'Tham gia ngay',
+		joinImmediately:'Đăng ký ngay',
 		disclaimer:'Miễn truy cứu trách nhiệm: Một bộ phận thông tin của trang web là do khách hàng tự đăng tải lên,<br /> nếu chủ sở hữu phát hiện tình trạng sai hay lỗi biến dạng hình ảnh, vui lòng liên hệ với chúng tôi.'
 	
 	},

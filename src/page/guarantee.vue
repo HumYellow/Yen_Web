@@ -4,14 +4,7 @@
 	<div>
 		<MyHeader></MyHeader>
 		<div class="bodyCenter clear">
-			<img width="100%" src="/static/image/guarantee/guarantee_1.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_2.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_3.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_4.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_5.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_6.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_7.jpg" />
-			<img width="100%" src="/static/image/guarantee/guarantee_8.jpg" />
+			<div class="picBox" v-for="pic in picList"><img width="100%" :src="pic.img" /></div>
 	    </div>
     </div>
 </template>
@@ -21,20 +14,22 @@ export default {
 	name: '',
 	data() {
 	  return {
+	  	thisTitle:this.$t('message.menu.Guarantee'),
+	  	picList:[]
 	  }
 	},
 	components: {
 		MyHeader,
 	},
-	mounted:()=>{
-		document.title = 'guarantee'
+	mounted(){
+		document.title = this.thisTitle
+		this.getPic()
 	},
 	methods:{
-
-		info:function(){
-			this.$fetch('login/info')
-		      .then((response) => {
-		        console.log(response)
+		getPic:function(){
+			this.$fetch('/recommend/protectionListData')
+		      .then((res) => {
+		        this.picList = res.data
 		      })
 
 		}

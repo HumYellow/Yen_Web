@@ -1,5 +1,5 @@
 <style type="text/css">
-.homeSrategy .srategyList{margin:30px auto 0; padding-bottom:100px;}
+.homeSrategy .srategyList{margin:40px auto 0; padding-bottom:100px;}
 .homeSrategy .srategyMod{width:24%;margin:0 .5%;float:left;border:1px solid #e3e3e3;box-sizing: border-box;box-shadow:2px 2px 10px #e9e9e9;}
 .homeSrategy .srategyMod:nth-child(2) ,.homeSrategy .srategyMod:nth-child(4){position:relative;top:30px;}
 .homeSrategy .srategyMod:nth-child(2) .srategyHead,.homeSrategy .srategyMod:nth-child(4) .srategyHead{background:#fff;border-bottom:1px solid #e3e3e3;}

@@ -1,7 +1,7 @@
 <style type="text/css">
 #register{background:#fff;height:100vh;width:100%;}
 .registerPage{max-width:960px;margin:6vw auto;background:#fff;}
-.registerPage img{float:left;padding:50px 0;}
+.registerPage img.picLeft{float:left;padding:50px 0;}
 .registerPage .loginBox{width:50%;float:left;padding:30px;box-sizing: border-box;
 	background:url('/static/image/loginBg.png') center no-repeat;background-size:90% 100%;}
 .registerPage .loginTitle{text-align:center; font-size:22px;margin:3vh auto 5vh;color:#3fbb87;}
@@ -20,12 +20,17 @@
 .registerPage input:-ms-input-placeholder {
     color: #dbdbdb;
 }
+
+.readingProtocol{color:#EBEBEB;margin:10px 40px 30px;color:#666666;font-size:12px;}
+.readingProtocol p{float:left;margin-left:10px;}
+.readingProtocol a.selectMod{width:14px;height:14px;display:block;margin-top:-1px;float:left;}
+.readingProtocol a{color:#3FBB87;}
 </style>
 <template>
 	<div id="register">
 		<MyHeader></MyHeader>
 		<div class="registerPage clear">
-			<img width="50%" src="/static/image/loginImg.png" />
+			<img class="picLeft" width="50%" src="/static/image/loginImg.png" />
 			<div class="loginBox">
 				<h2 class="loginTitle">{{$t("message.login.register")}}</h2>
 				<div class="loginMod">
@@ -37,10 +42,16 @@
 				<div class="loginMod">
 					<input @keyup.13="register()" :class="password2 == '' && this.null?'null':''" v-model="password2" :placeholder="$t('message.login.againPassword')" type="password" onKeyUp="value=value.replace(/[\W]/g,'')" />
 				</div>
-				<div class="loginMod verifyMod clear">
+				<div class="loginMod verifyMod clear" style="margin-bottom:15px;">
 					<input @keyup.13="register()" :class="dynamicCode == '' && this.null?'null':''" v-model="dynamicCode" :placeholder="$t('message.login.inputVerificationCode')" maxlength="4" onkeyup="value=value.replace(/[^\d]/g,'')" />
 					<a v-if="!verifyGeting" class="getVerify right" @click="getVerify">{{$t("message.login.get")}}</a>
 					<a v-else class="getVerify right verifyGeting">{{countdownData.sec}}S</a>
+				</div>
+				<div class="readingProtocol clear">
+					<a class="selectMod" @click="readTab">
+						<img width="100%" :src="readUrl" />
+					</a>
+					<p>Tôi đã đọc và đồng ý với <router-link to="/termsService">《Thỏa thuận người dùng của Yến trời》</router-link></p>
 				</div>
 				<a class="toLogin" @click="register()">{{$t("message.login.register")}}</a>
 			</div>
@@ -63,13 +74,14 @@ export default {
 			password2:'',
 			null:false,
 			verifyGeting:false,
+			selectRead:true,
 			countdownData:{
 				day: 0,
 				hr: 0, 
 				min: 0, 
 				sec: 0
-			}
-
+			},
+			readUrl:'/static/image/readSelect.png'
 		}
 	},
 	mounted:()=>{
@@ -92,8 +104,14 @@ export default {
 						nullName = this.$t('message.login.phone')
 					}else if(a == 'password'){
 						nullName = this.$t('message.login.password')
+					}else if(a == 'selectRead'){
+						this.$layer.alert('Làm ơn đọc người dùng giao thức',{
+							title:this.$t('message.tips.titleMsg'),
+							btn:this.$t('message.tips.ok')
+						})
+						return
 					}
-					this.$layer.alert(nullName+this.$t('message.tips.contNull'),{
+					this.$layer.alert(nullName+' '+this.$t('message.tips.contNull'),{
 						title:this.$t('message.tips.titleMsg'),
 						btn:this.$t('message.tips.ok')
 					})
@@ -175,6 +193,10 @@ export default {
 					that.countdown(endDateStr-1000)
 				}
 			}, 1000)
+		},
+		readTab:function(){
+			this.selectRead = !this.selectRead
+			this.readUrl = this.selectRead?'/static/image/readSelect.png':'/static/image/readNoSelect.png'
 		}
 	}
 }

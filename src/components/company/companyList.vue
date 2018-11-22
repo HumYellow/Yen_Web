@@ -10,9 +10,9 @@
 .companyTypeHead .companyTypeTable .companyTypeTitle{border-right:1px solid #dbdbdb;color:#666666;background:#F8F8F8;min-width:50px;text-align:center;width:100px;}
 .companyTypeHead .companyTypeTable .companyTypeMenuList{color:#999999;}
 .companyTypeHead .companyTypeTable .companyTypeMenuList a{float:left;margin-right:30px;color:#999999;font-size:12px;}
-.companyTypeHead .companyTypeTable .companyTypeMenuList a.select{color:#3FBB87;}
+.companyTypeHead .companyTypeTable .companyTypeMenuList a.select ,.companyTypeHead .companyTypeTable .companyTypeMenuList a:hover{color:#3FBB87;}
 
-.companyList{margin-top:40px;}
+#companyList .companyList{margin-top:40px;}
 #companyList .companyListMod{margin-bottom:60px;}
 #companyList .companyListMod .companyListPicBox{margin-top:30px;}
 #companyList .companyListMod .companyListLink{display:block;}
@@ -26,7 +26,8 @@
 -webkit-line-clamp: 2;
 overflow: hidden;}
 #companyList .companyDesc .collectBtn{position:absolute;right:10px;top:0;}
-
+#companyList .designCase{margin:20px 0 10px;}
+#companyList .designCase .num{color:#f88533;font-size:18px;}
 #companyList .companyListPaging{padding-top:30px; border-top:1px solid #f4f4f4;text-align:center;}
 #companyList .companyListPaging .companyListPagingMod ,.companyListPaging .ellipsis{height:25px;line-height:25px; padding:10px 20px;background:#fff;border-radius:5px;}
 #companyList .companyListPaging .companyListPagingMod{display:inline-block;margin:0 2px;text-align:center;border:1px solid #eee; border-left:none;color:#999;font-size:14px;cursor:pointer}
@@ -60,8 +61,12 @@ overflow: hidden;}
 					<div class="companyDesc">
 						<h3>{{company.name}}</h3>
 						<p v-if="theType">Tel&nbsp;:&nbsp;{{company.contact}}</p>
+						<div class="designCase">{{$t("message.company.designCases")}}&nbsp;&nbsp;&nbsp;&nbsp;<span class="num">{{company.designCount}}</span></div>
 						<p>{{$t("message.company.address")}}&nbsp;:&nbsp;{{company.address}}</p>
-						<p v-if="!theType">{{$t("message.company.companyProfile")}}&nbsp;:&nbsp;{{company.description}}</p>
+						<!-- <p v-if="!theType">{{$t("message.company.companyProfile")}}&nbsp;:&nbsp;{{company.description}}</p> -->
+						<div class="designCaseMod">
+							<!-- <p class="num">{{desc.designCount}}</p> -->
+						</div>
 						<a class="collectBtn" @click="collection(company.companyId,company.collect)" :data-id="company.companyId">
 							<img v-if="!company.collect" src="/static/image/design/collect.png" />
 							<img v-else src="/static/image/design/collectFinish.png" />

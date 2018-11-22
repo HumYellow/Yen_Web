@@ -6,14 +6,17 @@
 #designHead .swiperHead img{background-position:center;background-repeat:no-repeat;background-size:auto 100%;}
 #designHead .swiper-button-white{background-color:rgba(0,0,0,.5);padding:10px 20px;}
 
-.designTypeHeadList{position:absolute;left:8vw;top:0;background:#fff;box-sizing: border-box;z-index:1;padding:25px 15px; width:260px;height:100%;}
+.designTypeHeadList{position:absolute;left:8vw;top:0;background:#fff;box-sizing: border-box;z-index:1;padding:0px 15px; width:260px;height:100%;}
 .designTypeHeadList .designTypeTable{padding:15px 0;}
 .designTypeHeadList .designTypeTitle{color:#333;font-size:18px;height:40px;line-height:40px;background-repeat:no-repeat;background-position:left 10px;background-size:auto;padding-left:30px;}
 .designTypeHeadList .designTypeMenuList{padding-left:32px;}
-.designTypeHeadList .designTypeTable:nth-child(1){border-bottom:1px dashed #D8D8D8;}
+.designTypeHeadList .designTypeTable{border-bottom:1px dashed #D8D8D8;}
+.designTypeHeadList .designTypeTable:last-child{border:none;}
 .designTypeHeadList .designTypeTable:nth-child(1) .designTypeTitle{background-image:url('/static/image/design/designType_1.png');}
 .designTypeHeadList .designTypeTable:nth-child(2) .designTypeTitle{background-image:url('/static/image/design/designType_0.png');}
-.designTypeHeadList .designTypeTable a{display:block;width:50%;float:left;color:#666;font-size:12px;line-height:26px;}
+.designTypeHeadList .designTypeTable:nth-child(3) .designTypeTitle{background-image:url('/static/image/design/designType_2.png');}
+.designTypeHeadList .designTypeTable a{display:block;width:50%;float:left;color:#666;font-size:12px;line-height:24px;}
+.designTypeHeadList .designTypeTable a:hover{color:#3FBB87;}
 </style>
 <template>
 	<div id="designHead">

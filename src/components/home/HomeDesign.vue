@@ -1,5 +1,5 @@
 <style type="text/css">
-.homeDesign{margin:40px auto;padding:30px 0;background:#f5f5f5;}
+.homeDesign{margin:40px auto;padding:40px 0;background:#f5f5f5;}
 .homeDesign .designList{width:100%;max-width:1400px;width:100%; height:600px;text-align:center;position:relative;margin-top:30px;}
 .homeDesign .designBox:hover .designDesc{transition: all .8s ease;opacity:1}
 .homeDesign .designBox{position:absolute;box-sizing: border-box;padding:5px;overflow:hidden;}

@@ -31,10 +31,10 @@
 							<span class="companyDetailsK">{{$t("message.home.designScheme")}}:</span>
 							<span class="companyDetailsV">{{company.designCount}}</span>
 						</p>
-						<div class="companyPhone">
+						<!-- <div class="companyPhone">
 							<span class="companyPhoneK">{{$t("message.home.consultingPhone")}}:</span>
 							<span>{{company.contact}}</span>
-						</div>
+						</div> -->
 					</div>
 				</router-link>
 			</div>

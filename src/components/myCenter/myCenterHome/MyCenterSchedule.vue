@@ -22,7 +22,7 @@
 .scheduleShow{margin-top:20px;}
 .scheduleShow li{padding:10px 30px; margin:5px 0;color:#9a9a9a;font-size:13px;background:url(/static/image/myCenter/scheduleShow.png) left 10px no-repeat;}
 .scheduleShow li h5{margin-bottom:10px;}
-.scheduleShow li.select{color:#3fbb87;background-image: url(/static/image/myCenter/scheduleShowSelect.png)}
+.scheduleShow li.select{background-image: url(/static/image/myCenter/scheduleShowSelect.png)}
 .myCenterSchedule .projectBtn{padding:5px 10px;font-size:13px; display:inline-block;}
 .myCenterSchedule .projectBtn[data-swich=select]{border:1px solid #f4f4f4;border-top:3px solid #0cb46a;border-bottom-color:#fff;}
 .scheduleList .companyList{width:80%;margin-top:10px;}
@@ -59,7 +59,8 @@
 									<li v-for="(scheduleMod,index) in schedule[stage]" 
 									:class="scheduleMod.tagId < step ||(scheduleMod.tagId == step && scheduleDesc.fewStepStatus != 'verify')?'select':''">
 										<h5>{{scheduleMod.title}}</h5>
-										<div v-if="scheduleMod.tagId <= step">{{scheduleMod['desc3']}}</div>
+										<div v-if="scheduleMod.tagId <= step && scheduleDesc.fewStepStatus != 'verify'">{{scheduleMod['desc3']}}</div>
+										<div v-if="scheduleMod.tagId <= step && scheduleDesc.fewStepStatus == 'verify'">{{scheduleMod['desc2']}}</div>
 										<div v-if="scheduleMod.tagId > step">{{scheduleMod['desc']}}</div>
 										<div v-if="key == 'fewStep'+scheduleMod.tagId"
 										 	v-for="(value ,key) in scheduleDesc.orderDetailMap" 
