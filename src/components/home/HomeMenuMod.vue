@@ -10,7 +10,7 @@
 .homeMenuMod .homeMenuModBox:nth-child(4) .homeMenuModBoxPic{background-image:url('/static/image/homeMenuMod/page_4.png');}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxPic{width:100%;height:100%;background-position:right center;background-repeat:no-repeat;display:flex;align-items:center;}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxPic .homeMenuModText{margin:0 20px;width:70%;}
-.homeMenuMod .homeMenuModBox .homeMenuModBoxPic .homeMenuModText h4{color:#333;font-size:18px;}
+.homeMenuMod .homeMenuModBox .homeMenuModBoxPic .homeMenuModText h4{color:#333;font-size:18px;font-weight:100;}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxPic .homeMenuModText p{color:#666;font-size:12px;margin-top:5px;}
 </style>
 
