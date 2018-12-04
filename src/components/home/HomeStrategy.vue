@@ -6,7 +6,8 @@
 .homeSrategy .srategyMod .srategyHead{width:100%;height:170px;display:flex;align-items: center; justify-content: space-around;background:#f5f5f5;background-repeat:no-repeat;background-position:center;background-size:100% auto;}
 .homeSrategy .srategyMod .srategyBody{box-sizing: border-box;width:100%;padding:16px;}
 .homeSrategy .srategyBodyList{font-size:14px;}
-.homeSrategy .srategyBodyList p{line-height:18px;color:#999;margin-top:10px;height:90px;display: -webkit-box;
+.homeSrategy .srategyBodyList h3{color:#333;}
+.homeSrategy .srategyBodyList p{line-height:18px;color:#666;margin-top:10px;height:90px;display: -webkit-box;
 -webkit-box-orient: vertical;font-size:12px;
 -webkit-line-clamp: 5;
 overflow: hidden;}

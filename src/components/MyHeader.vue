@@ -4,10 +4,10 @@
 #myHeader ul{display:inline-block;}
 #myHeader li{display:inline-block; padding:0 15px;margin:0 15px;border-bottom:2px solid #fff;font-size:14px;}
 #myHeader li.select{border-color:#2B9684;}
-#myHeader li a{color:#333;}
+#myHeader li a{color:#000;}
 #myHeader li.select a ,#myHeader li a:hover{color:#2B9684;}
-#myHeader .loginMod{color:#a8a8a8;display:inline-block;font-size:12px;}
-#myHeader .loginMod a{margin:0 10px; color:#a8a8a8;}
+#myHeader .loginMod{color:#333;display:inline-block;font-size:12px;}
+#myHeader .loginMod a{margin:0 10px; color:#333;}
 #myHeader .logo{position:absolute; left:0;top:0;}
 #myHeader .langChange{position:absolute;right:20px; top:20px;}
 #myHeader .langMod{float:left; margin:0 5px;}

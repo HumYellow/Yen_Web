@@ -7,9 +7,9 @@
 #footer .footerMod h3{color:#666;text-align:left;line-height:35px;font-size:14px;}
 #footer .footerMod p{color:#999;text-align:left;line-height:18px;font-size:12px;}
 #footer .footerRouterList a{float:left;margin-right:20px;}
-#footer .footerTextBox{text-align:center;color:#999; font-size:12px;margin-top:20px;line-height:20px;}
+#footer .footerTextBox{text-align:center;color:#666; font-size:12px;margin-top:20px;line-height:20px;}
 #footer .linkListMod{font-size:14px;}
-#footer .linkListMod a{display:inline-block;padding:0 20px;border-left:1px solid #DADADA;color:#666666;}
+#footer .linkListMod a{display:inline-block;padding:0 20px;border-left:1px solid #DADADA;color:#333;}
 #footer .linkListMod a:nth-child(1){border:none;}
 </style>
 <template>

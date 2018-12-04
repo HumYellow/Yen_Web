@@ -1,7 +1,6 @@
 <style type="text/css">
 .homeBox{background:#fff;}
-.processBox .process{margin-top:40px;width:100%;}
-.homeTitle{text-align:center; font-size:24px; line-height:30px; color:#555;}
+.homeTitle{text-align:center; font-size:24px; line-height:30px; color:#333;}
 </style>
 <template>
 	<div class="homeBox">
@@ -9,14 +8,7 @@
 		<HomeHead></HomeHead>
 		<HomeMenuMod></HomeMenuMod>
 		<HomeCompany></HomeCompany>
-		<div class="processBox bodyCenter">
-			<h3 class="homeTitle">{{$t("message.home.serviceProcess")}}</h3>
-			<div class="process bodyCenter">
-				<router-link to="/guarantee" target="_blank">
-					<img width="100%" :src="$t('message.home.processImage')" />
-				</router-link>
-			</div>
-		</div>
+		<HomeProcess></HomeProcess>
 		<HomeDesign></HomeDesign>
 		<HomeStrategy></HomeStrategy>
 		<ContactWhole></ContactWhole>
@@ -27,6 +19,7 @@ import MyHeader from '@/components/MyHeader'
 import HomeHead from '@/components/home/HomeHead'
 import HomeMenuMod from '@/components/home/HomeMenuMod'
 import HomeCompany from '@/components/home/HomeCompany'
+import HomeProcess from '@/components/home/HomeProcess'
 import HomeDesign from '@/components/home/HomeDesign'
 import HomeStrategy from '@/components/home/HomeStrategy'
 import ContactWhole from '@/components/ContactWhole'
@@ -38,6 +31,7 @@ export default {
 		HomeHead,
 		HomeMenuMod,
 		HomeCompany,
+		HomeProcess,
 		HomeDesign,
 		ContactWhole,
 		HomeStrategy

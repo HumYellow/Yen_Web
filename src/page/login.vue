@@ -9,9 +9,9 @@
 #login .loginPage .loginBox input{border:0;outline:none;border-bottom:1px solid #cacaca;font-size:16px; line-height:22px;width:80%;padding:5px 10px;box-sizing: border-box;}
 #login .loginPage .toLogin{display:block;margin:40px auto 0;width:80%; padding:10px 0; font-size:18px;height:30px;line-height:30px; color:#fff; background:#3FBB87; border-radius:5px;text-align:center;}
 #login .forgetPasswordLink{text-align:right;padding:0 40px;margin-top:10px;}
-#login .forgetPasswordLink a{color:#CACACA;font-size:12px;}
+#login .forgetPasswordLink a{color:#666;font-size:12px;}
 #login .forgetPasswordLink a:hover{color:#3FBB87;}
-#login .toRegister{text-align:center;color:#CACACA;font-size:12px;margin-top:10px;}
+#login .toRegister{text-align:center;color:#666;font-size:12px;margin-top:10px;}
 #login .toRegister a{color:#3FBB87;}
 .loginPage input::-webkit-input-placeholder {
     color: #dbdbdb;

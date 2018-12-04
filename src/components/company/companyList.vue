@@ -7,9 +7,9 @@
 .companyTypeHead{border:1px solid #EAEAEA;background:#fff;}
 .companyTypeHead .companyTypeTable{border-bottom:1px solid #dbdbdb;}
 .companyTypeHead .companyTypeTable .companyTypeTitle ,.companyTypeHead .companyTypeTable .companyTypeMenuList{padding:30px;float:left; font-size:14px;}
-.companyTypeHead .companyTypeTable .companyTypeTitle{border-right:1px solid #dbdbdb;color:#666666;background:#F8F8F8;min-width:50px;text-align:center;width:100px;}
+.companyTypeHead .companyTypeTable .companyTypeTitle{border-right:1px solid #dbdbdb;color:#333;background:#F8F8F8;min-width:50px;text-align:center;width:100px;}
 .companyTypeHead .companyTypeTable .companyTypeMenuList{color:#999999;}
-.companyTypeHead .companyTypeTable .companyTypeMenuList a{float:left;margin-right:30px;color:#999999;font-size:12px;}
+.companyTypeHead .companyTypeTable .companyTypeMenuList a{float:left;margin-right:30px;color:#666;font-size:12px;}
 .companyTypeHead .companyTypeTable .companyTypeMenuList a.select ,.companyTypeHead .companyTypeTable .companyTypeMenuList a:hover{color:#3FBB87;}
 
 #companyList .companyList{margin-top:40px;}
@@ -25,8 +25,9 @@
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
 overflow: hidden;}
+#companyList .companyDesc p span{color:#333;}
 #companyList .companyDesc .collectBtn{position:absolute;right:10px;top:0;}
-#companyList .designCase{margin:20px 0 10px;}
+#companyList .designCase{margin:20px 0 10px;color:#333;}
 #companyList .designCase .num{color:#f88533;font-size:18px;}
 #companyList .companyListPaging{padding-top:30px; border-top:1px solid #f4f4f4;text-align:center;}
 #companyList .companyListPaging .companyListPagingMod ,.companyListPaging .ellipsis{height:25px;line-height:25px; padding:10px 20px;background:#fff;border-radius:5px;}
@@ -62,7 +63,7 @@ overflow: hidden;}
 						<h3>{{company.name}}</h3>
 						<p v-if="theType">Tel&nbsp;:&nbsp;{{company.contact}}</p>
 						<div class="designCase">{{$t("message.company.designCases")}}&nbsp;&nbsp;&nbsp;&nbsp;<span class="num">{{company.designCount}}</span></div>
-						<p>{{$t("message.company.address")}}&nbsp;:&nbsp;{{company.address}}</p>
+						<p><span>{{$t("message.company.address")}}&nbsp;:&nbsp;</span>{{company.address}}</p>
 						<!-- <p v-if="!theType">{{$t("message.company.companyProfile")}}&nbsp;:&nbsp;{{company.description}}</p> -->
 						<div class="designCaseMod">
 							<!-- <p class="num">{{desc.designCount}}</p> -->

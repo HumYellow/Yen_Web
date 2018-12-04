@@ -5,10 +5,10 @@
 .strategyMaterialMod .pic{width:48%;margin-right:2%;height:145px;overflow:hidden;}
 .strategyMaterialMod .text{width:50%;font-size:12px;overflow: hidden;padding:10px 0;}
 .strategyMaterialMod .text h4{font-size:16px;line-height:20px;margin-bottom:15px;display: -webkit-box;
--webkit-box-orient: vertical;color:#666;
+-webkit-box-orient: vertical;color:#333;
 -webkit-line-clamp: 1;
 overflow: hidden}
-.strategyMaterialMod .text p{line-height:16px;display: -webkit-box;color:#999;font-size:14px;
+.strategyMaterialMod .text p{line-height:16px;display: -webkit-box;color:#666;font-size:14px;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 6;
 overflow: hidden}

@@ -6,7 +6,7 @@
 
 #designList .designDesc span{display:block;font-size:13px;}
 #designList .designDesc .left{width:65%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-align:left;}
-#designList .designDesc .right{width:35%;text-align:right;}
+#designList .designDesc .right{width:35%;text-align:right;color:#666;}
 /* 收藏 */
 #designList .img-inner-box:hover .toPlaceOrder,#designList .img-inner-box:hover .collectBtn{display:block;}
 #designList .designDesc .toPlaceOrder{position:absolute;left:10px;bottom:56px;width:240px;color:#fff;background-color:rgba(63,187,135,.8);box-sizing: border-box;padding:5px 0;font-size:14px;display:none;}
