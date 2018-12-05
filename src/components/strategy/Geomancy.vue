@@ -5,10 +5,10 @@
 .geomancyMod .pic{width:48%;margin-right:2%;height:145px;overflow:hidden;}
 .geomancyMod .text{width:50%;font-size:12px;overflow: hidden;padding:10px 0;}
 .geomancyMod .text h4{font-size:16px;line-height:22px;margin-bottom:15px;display: -webkit-box;
--webkit-box-orient: vertical;color:#666;
+-webkit-box-orient: vertical;color:#333;
 -webkit-line-clamp: 1;
 overflow: hidden}
-.geomancyMod .text p{line-height:16px;display: -webkit-box;color:#999;
+.geomancyMod .text p{line-height:16px;display: -webkit-box;color:#666;
 -webkit-box-orient: vertical;font-size:14px;
 -webkit-line-clamp: 6;
 overflow: hidden;}
