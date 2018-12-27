@@ -20,44 +20,44 @@
 				<router-link to="/guarantee" target="_blank">
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Gửi yêu cầu</h4>
-							<p>Đăng ký liên hệ</p>
+							<h4>{{$t("message.home.homeProcessTitle1")}}</h4>
+							<p>{{$t("message.home.homeProcessText1")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Lên phương án</h4>
-							<p>Miễn phí đo đạc thiết kế</p>
+							<h4>{{$t("message.home.homeProcessTitle2")}}</h4>
+							<p>{{$t("message.home.homeProcessText2")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>So sánh</h4>
-							<p>So sánh phương án thiết kế</p>
+							<h4>{{$t("message.home.homeProcessTitle3")}}</h4>
+							<p>{{$t("message.home.homeProcessText3")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Kí hợp đồng</h4>
-							<p>Kí hợp đồng</p>
+							<h4>{{$t("message.home.homeProcessTitle4")}}</h4>
+							<p>{{$t("message.home.homeProcessText4")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Thi công</h4>
-							<p>Thi công cải tạo</p>
+							<h4>{{$t("message.home.homeProcessTitle5")}}</h4>
+							<p>{{$t("message.home.homeProcessText5")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Nghiệm thu</h4>
-							<p>Nghiệm thu bàn giao</p>
+							<h4>{{$t("message.home.homeProcessTitle6")}}</h4>
+							<p>{{$t("message.home.homeProcessText6")}}</p>
 						</div>
 					</div>
 					<div class="processMod">
 						<div class="processModBox">
-							<h4>Bảo đảm</h4>
-							<p>Đảm bảo chất lượng</p>
+							<h4>{{$t("message.home.homeProcessTitle7")}}</h4>
+							<p>{{$t("message.home.homeProcessText7")}}</p>
 						</div>
 					</div>
 					<!-- <img width="100%" :src="$t('message.home.processImage')" /> -->

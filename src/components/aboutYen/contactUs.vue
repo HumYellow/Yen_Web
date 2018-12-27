@@ -3,9 +3,7 @@
 <template>
 	<div>
 		<div class="textBody">
-			<p>Điện thoại: +84 (28) 3910.0635</p> 
-			<p>Email: yenttroi@yenttroi.com </p> 
-			<p>Địa chỉ: Vietcombank Tower, số 5 Công trường Mê Linh, phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh</p>
+			<p v-html="contactUs"></p>
 		</div>
 	</div>
 </template>
@@ -16,10 +14,21 @@ export default {
 	},
 	data(){
 		return {
+			contactUs:'',
 		}
 	},
-	mounted:()=>{
-		document.title = ''
+	methods:{
+		getData:function(){
+			this.$fetch('/article/connectUsData')
+			.then((res)=>{
+				this.contactUs = res.data
+			})
+		}
+	},
+	mounted(){
+	},
+	created(){
+		this.getData()
 	}
 }
 </script>

@@ -51,7 +51,9 @@
 					<a class="selectMod" @click="readTab">
 						<img width="100%" :src="readUrl" />
 					</a>
-					<p>Tôi đã đọc và đồng ý với <router-link to="/termsService">《Thỏa thuận người dùng của Yến trời》</router-link></p>
+					<p>{{$t("message.register.agreementText1")}} 
+						<router-link to="/aboutYen/termsService">{{$t("message.register.agreementText2")}}</router-link>
+					</p>
 				</div>
 				<a class="toLogin" @click="register()">{{$t("message.login.register")}}</a>
 			</div>

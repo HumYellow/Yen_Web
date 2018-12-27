@@ -4,7 +4,8 @@
 </style>
 <template>
 	<div class="textBody" id="termsService">
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chào mừng bạn đến với Yến Trời !
+		<p v-html="termsService"></p>
+		<!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chào mừng bạn đến với Yến Trời !
 		Để sử dụng dịch vụ của Yến Trời, bạn nên đọc và tuân thủ “Thỏa thuận dịch vụ của Yến trời” ("Thỏa thuận"). Hãy chắc chắn rằng bạn đã đọc kỹ và hiểu một cách đúng và  đầy đủ về các điều khoản cũng như điều kiện Khi bạn sử dụng dịch vụ của Yến trời thì hành vi đó được coi là bạn đã đọc và đồng ý bị ràng buộc bởi các thỏa thuận trên.
 		Nếu bạn dưới 18 tuổi, vui lòng đọc thỏa thuận này cùng một người giám hộ hợp pháp và đặc biệt chú ý đến các điều khoản sử dụng dành cho trẻ vị thành niên.</p>
 		<h4>Phạm vi của thỏa thuận</h4>
@@ -156,7 +157,7 @@
 		<p>(1) Nhận biết rõ về sự khác nhau giữa thế giới ảo và thế giớ thực tại, tránh bị mê muội bởi mạng Internet, ảnh hưởng đến công việc học tập hàng ngày.</p>
 		<p>(2) Khi điền các thông tin cá nhân, tăng cường ý thức bảo vệ bản nhân, tránh để những thành phần xấu quấy rối cuộc sống.</p>
 		<p>(3) Sử dụng mạng Internet đúng đắn, dưới sự chỉ đạo của người giám hộ hoặc thầy cô giáo.</p>
-		<p>(4) Tránh tuỳ tiện gặp gỡ những bạn quen trên mạng hoặc tham gia những hoạt động offline, tránh những thành phần phi pháp có cơ hội tận dụng gây nguy hiểm cho bản thân. </p>
+		<p>(4) Tránh tuỳ tiện gặp gỡ những bạn quen trên mạng hoặc tham gia những hoạt động offline, tránh những thành phần phi pháp có cơ hội tận dụng gây nguy hiểm cho bản thân. </p> -->
 	</div>
 </template>
 <script type="text/javascript">
@@ -166,10 +167,21 @@ export default {
 	},
 	data(){
 		return {
+			termsService:'',
 		}
 	},
-	mounted:()=>{
-		document.title = ''
+	methods:{
+		getData:function(){
+			this.$fetch('/article/termsData')
+			.then((res)=>{
+				this.termsService = res.data
+			})
+		}
+	},
+	mounted(){
+	},
+	created(){
+		this.getData()
 	}
 }
 </script>

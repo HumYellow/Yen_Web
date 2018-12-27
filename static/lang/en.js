@@ -23,6 +23,10 @@ module.exports={
 		passwordError:'The password is at least 8 bits  and must contain numbers and letters',
 		submit:'Submit',
 	},
+    register:{
+        agreementText1:'I have read and accepted ',
+        agreementText2:'《YEN User Service term》',
+    },
 	tips:{
 		titleMsg:'message',
 		ok:'OK',
@@ -44,7 +48,29 @@ module.exports={
     	homeMenuImage1:'/static/image/homeMenuMod/page_1.png',
     	homeMenuImage2:'/static/image/homeMenuMod/page_2.png',
     	homeMenuImage3:'/static/image/homeMenuMod/page_3.png',
-    	homeMenuImage4:'/static/image/homeMenuMod/page_4.png'
+    	homeMenuImage4:'/static/image/homeMenuMod/page_4.png',
+    	homeMenuTitle1:'Free Design',
+    	homeMenuText1:'Get three design scheme',
+    	homeMenuTitle2:'Free Quotation',
+    	homeMenuText2:'Calculate the cost of decoration',
+    	homeMenuTitle3:'House Customization',
+    	homeMenuText3:'Let family expansion 30%',
+    	homeMenuTitle4:'Pay After Decoration',
+    	homeMenuText4:'Professional quality inspection',
+    	homeProcessTitle1:'BOOKING',
+    	homeProcessText1:'Registered contact information',
+    	homeProcessTitle2:'MEASURE',
+    	homeProcessText2:'Free design',
+    	homeProcessTitle3:'COMPARISON',
+    	homeProcessText3:'Comparison scheme',
+    	homeProcessTitle4:'CONTRACT',
+    	homeProcessText4:'Signing the contract',
+    	homeProcessTitle5:'IMPLEMENT',
+    	homeProcessText5:'Decoration construction',
+    	homeProcessTitle6:'DELIVERY',
+    	homeProcessText6:'Completion acceptance',
+    	homeProcessTitle7:'GUARANTEE',
+    	homeProcessText7:'Quality assurance',
     },
     placeOrder:{
     	name:'Name',
@@ -54,11 +80,14 @@ module.exports={
 		type:'type',
 		newHouse:'New House',
 		rebuild:'Rebuild',
+		toFreeReserve:'Free design',
 		pleaseChoose:'Please choose',
 		pleaseEvaluation:'Please input your evaluation',
 		uploadPic:'Upload a picture',
 		image1:'/static/image/placeOrderBtn.gif',
 		image2:'/static/image/placeOrderRight.gif',
+        placeOrderBg:'/static/image/placeOrderBg_EN.png',
+
     },
     aboutUs:{
     	inputCompanyName:'Input company name',
@@ -71,7 +100,8 @@ module.exports={
     	atlasInformation:'Atlas information',
     	decorateLikeThis:'Decorate like this',
     	pictures:'pictures',
-    	description:'description'
+    	description:'description',
+        contact:'Contact',
 
     },
     company:{
@@ -96,6 +126,9 @@ module.exports={
     		prepare:'Prepare',
     		decorating:'Decorating',
     		finish:'Finish',
+            strategMenuHeadPic1:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/EN_image/strategyProcess1.png',
+            strategMenuHeadPic2:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/EN_image/strategyProcess2.png',
+            strategMenuHeadPic3:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/EN_image/strategyProcess3.png',
     	},
     	strategType:{
     		takeRoom:'take room',
@@ -215,6 +248,7 @@ module.exports={
 			city:'City',
 			currentProfilePhoto:'Current profile photo',
 			uploadProfilePhoto:'Upload Profile Photo',
+            showPhoneText:'Show contact information to other users',
 			save:'Save',
 			onlyTwo:'Only two brothers',
 		}
@@ -225,8 +259,19 @@ module.exports={
 		connectUs:'Connect Us',
 		businessCooperation:'Business Cooperation',
 		joinImmediately:'Join immediately',
-		disclaimer:'Disclaimer: Some of the contents of this website are uploaded by users themselves. If the obligee find that there is misrepresentation of his works, please contact this website in time.'
+		disclaimer:'Disclaimer: Some of the contents of this website are uploaded by users themselves.<br /> If the obligee find that there is misrepresentation of his works, please contact this website in time.',
+        disclaimer2:'Copy right  2018 www.yenttroi.com All Right Reserved.'
 	},
+    modifyPhone:{
+        modifyPhoneTitle:'Modify Binding Mobile Phone',
+        verify:'Verify',
+        boundPhone:'Please enter your bound phone number.',
+        validationCode:'Please enter the validation code',
+        getCode:'Get code',
+        finish:'Finish',
+        newPhone:'Please enter the new phone number',
+        validationCode2:'Please enter the validation code'
+    },
 
   }
 }

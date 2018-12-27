@@ -36,6 +36,7 @@
 			<div class="sidebarModTitle">{{$t("message.myCenter.myCenterSidebar.myInformatio")}}</div>
 			<ul class="linkList">
 				<li><router-link :class="thisLinkName == 'personalData'?'select':''" to="/myCenter/personalData">{{$t("message.myCenter.myCenterSidebar.personalData")}}</router-link></li>
+				<li><router-link :class="thisLinkName == 'modifyPhone' || thisLinkName == 'modifyPhoneFinish' ?'select':''" to="/myCenter/modifyPhone">{{$t('message.modifyPhone.modifyPhoneTitle')}}</router-link></li>
 				<!-- <li><router-link :class="thisLinkName == 'collectCompany'?'select':''" to="/myCenter/collectCompany">Decoration company</router-link></li> -->
 			</ul>
 		</div>

@@ -109,9 +109,12 @@ export default {
 			this.$fetch(this.getDataUrl, {id:this.$route.params.id})
 			.then((res)=>{
 				this.dataList = res.data
-				for(var a in this.dataList.subDesignList){//更换接口名字
+				for(var a = 0;a<this.dataList.subDesignList.length;a++){//更换接口名字
 					this.dataList.subDesignList[a].url = this.dataList.subDesignList[a].img
-				if(this.dataList.subDesignList[a].name == '')this.dataList.subDesignList[a].name=this.$t("message.myCenter.inputPictureDescription")
+					if(this.dataList.subDesignList[a].name == ''){
+						this.dataList.subDesignList[a].name = this.$t("message.myCenter.inputPictureDescription")
+
+					}
 				}
 				this.subDesignList = this.dataList.subDesignList
 			})

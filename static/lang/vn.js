@@ -23,6 +23,10 @@ module.exports={
 		passwordError:'Mật khẩu tối thiểu 8 kí tự bao gồm cả chữ và số.',
 		submit:'Xác nhận',
 	},
+    register:{
+        agreementText1:'Tôi đã đọc và đồng ý',
+        agreementText2:'《Thoả thuận sử dụng dịch vụ của YEN》',
+    },
 	tips:{
 		titleMsg:'Thông báo',
 		ok:'Xác nhận',
@@ -44,7 +48,29 @@ module.exports={
     	homeMenuImage1:'/static/image/homeMenuMod/vn/page_1.png',
     	homeMenuImage2:'/static/image/homeMenuMod/vn/page_2.png',
     	homeMenuImage3:'/static/image/homeMenuMod/vn/page_3.png',
-    	homeMenuImage4:'/static/image/homeMenuMod/vn/page_4.png'
+    	homeMenuImage4:'/static/image/homeMenuMod/vn/page_4.png',
+    	homeMenuTitle1:'Miễn phí thiết kế',
+    	homeMenuText1:'Nhận 03 phương án thiết kế',
+    	homeMenuTitle2:'Miễn phí báo giá',
+    	homeMenuText2:'Dự toán chi phí thiết kế',
+    	homeMenuTitle3:'Thiết kế hoàn thiện',
+    	homeMenuText3:'Mở rộng tối đa không gian',
+    	homeMenuTitle4:'Thi công trước, thanh toán sau',
+    	homeMenuText4:'Đội ngũ giám sát chất lượng chuyên nghiệp',
+    	homeProcessTitle1:'Gửi yêu cầu',
+    	homeProcessText1:'Đăng ký liên hệ',
+    	homeProcessTitle2:'Lên phương án',
+    	homeProcessText2:'Miễn phí đo đạc thiết kế',
+    	homeProcessTitle3:'So sánh',
+    	homeProcessText3:'So sánh phương án thiết kế',
+    	homeProcessTitle4:'Kí hợp đồng',
+    	homeProcessText4:'Kí hợp đồng',
+    	homeProcessTitle5:'Thi công',
+    	homeProcessText5:'Thi công cải tạo',
+    	homeProcessTitle6:'Nghiệm thu',
+    	homeProcessText6:'Nghiệm thu bàn giao',
+    	homeProcessTitle7:'Bảo đảm',
+    	homeProcessText7:'Đảm bảo chất lượng',
     },
     placeOrder:{
     	name:'Họ tên',
@@ -60,6 +86,7 @@ module.exports={
 		uploadPic:'Đang tải hình ảnh',
 		image1:'/static/image/vnImage/placeOrderBtn.gif',
 		image2:'/static/image/vnImage/placeOrderRight.gif',
+        placeOrderBg:'/static/image/placeOrderBg_VN.png',
     },
     aboutUs:{
     	inputCompanyName:'Tên Công ty',
@@ -72,7 +99,8 @@ module.exports={
     	atlasInformation:'Thông tin bản vẽ',
     	decorateLikeThis:'Thiết kế giống hình ảnh này',
     	pictures:'Hình ảnh',
-    	description:'Mô tả'
+    	description:'Mô tả',
+        contact:'Liên hệ'
 
     },
     company:{
@@ -97,6 +125,9 @@ module.exports={
     		prepare:'Sẵn sàng',
     		decorating:'Trang trí.',
     		finish:'Hoàn thành',
+            strategMenuHeadPic1:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess1.png',
+            strategMenuHeadPic2:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess2.png',
+            strategMenuHeadPic3:'https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess3.png',
     	},
     	strategType:{
     		takeRoom:'Nhận nhà',
@@ -218,6 +249,7 @@ module.exports={
 			city:'Thành phố',
 			currentProfilePhoto:'Hình đại diện ',
 			uploadProfilePhoto:'Đăng hình đại diện',
+            showPhoneText:'Đồng ý công khai phương thức liên hệ với người dùng khác',
 			save:'Lưu lại',
 			onlyTwo:'Chỉ có hai người anh em',
 		},
@@ -232,5 +264,15 @@ module.exports={
 		disclaimer:'Miễn truy cứu trách nhiệm: Một bộ phận thông tin của trang web là do khách hàng tự đăng tải lên,<br /> nếu chủ sở hữu phát hiện tình trạng sai hay lỗi biến dạng hình ảnh, vui lòng liên hệ với chúng tôi.',
 		disclaimer2:'Bản quyền trang web yentroi.com thuộc về công ty Yến trời'
 	},
+    modifyPhone:{
+        modifyPhoneTitle:'Đổi số điện thoại đã đăng ký',
+        verify:'Xác thực',
+        boundPhone:'Vui lòng nhập số điện thoại bạn đã đăng ký.',
+        validationCode:'Vui lòng nhập mã xác minh',
+        getCode:'Nhận mã xác thực',
+        finish:'Hoàn thành',
+        newPhone:'Vui lòng nhập số điện thoại mới',
+        validationCode2:'Nhập mã xác nhận bên phải',
+    },
   }
 }

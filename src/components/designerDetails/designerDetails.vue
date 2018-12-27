@@ -3,7 +3,8 @@
 .designerDetailsHead{height:180px;background: center url('/static/image/design/designerDetailsHead.png') no-repeat;background-size:100% 100%;position:relative;margin-bottom:100px;}
 .designerDetailsDesc{width:200px;margin:0 auto;text-align:center;position:relative;top:130px;}
 .designerDetailsDesc .designerDetailsPic{border:3px solid #fff;border-radius:50%;overflow:hidden;width:90px;height:90px;margin:0 auto;}
-.designerDetailsDesc .designerDetailsName{margin-top:10px;}
+.designerDetailsDesc .designerDetailsName{margin:5px 0;}
+.designerDetailsDesc .designerPhone{margin:10px 0;text-align:center;color:#666666;font-size:14px;}
 .designerPicList .designPicListMod{float:left;width:24%;box-sizing: border-box;margin:10px .5%;box-shadow: 2px 2px 10px #e9e9e9}
 .designerPicList .designPicListMod img{height:200px;}
 .designerPicList .designPicListMod .designName{padding:15px;font-size:12px;}
@@ -14,6 +15,7 @@
 			<div class="designerDetailsDesc">
 				<div class="designerDetailsPic"><img height="100%" width="100%" :src="designerDesc.headImg" /></div>
 				<div class="designerDetailsName">{{designerDesc.title}}</div>
+				<div class="designerPhone" v-if="designerDesc.phone">{{$t("message.design.contact")}}：{{designerDesc.phone}}</div>
 			</div>
 		</div>
 		<div class="designerPicList clear">
@@ -70,7 +72,6 @@ export default {
 					this.designList = this.designList.concat(res.data)
 				}
 				this.group++
-				console.info(this.designList)
 				if(this.getDataing)this.getDataing = false
 			})
 		},

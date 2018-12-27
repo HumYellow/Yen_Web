@@ -18,7 +18,7 @@ html,body{margin:0;padding:0;width:100%;}
 a{text-decoration:none;margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;color:#000;}
 a:hover,a:focus{text-decoration:none;bblr:expression(this.onFocus=this.blur());/*IE*/outline-style:none;/*FF*/color:none;}
 table{border-collapse:collapse;border-spacing:0;}
-input,select{vertical-align:middle;}
+input,select{vertical-align:middle;outline: none;}
 /*css为clearfix，清除浮动*/
 .clear::before,.clear::after{content:"";height:0;line-height:0;display:block;visibility:hidden;clear:both;}
 .clear:after{clear:both;}
@@ -32,11 +32,16 @@ input,select{vertical-align:middle;}
 .mt30{margin-top:30px;}
 .mt40{margin-top:40px;}
 .mt50{margin-top:50px;}
-.ml10{margin-top:10px;}
-.ml20{margin-top:20px;}
-.ml30{margin-top:30px;}
-.ml40{margin-top:40px;}
-.ml50{margin-top:50px;}
+.ml10{margin-left:10px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml50{margin-left:50px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr40{margin-right:40px;}
+.mr50{margin-right:50px;}
 
 .bodyCenter{width:1280px; margin:0 auto;}
 

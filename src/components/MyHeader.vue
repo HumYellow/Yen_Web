@@ -10,7 +10,9 @@
 #myHeader .loginMod a{margin:0 10px; color:#333;}
 #myHeader .logo{position:absolute; left:0;top:0;}
 #myHeader .langChange{position:absolute;right:20px; top:20px;}
-#myHeader .langMod{float:left; margin:0 5px;}
+#myHeader .langMod{margin:0 5px;display: inline-block;font-size:12px;}
+#myHeader .langMod a{margin:0 3px;}
+#myHeader .langMod .select{color:#3FBB87;}
 </style>
 <template>
 	<div class="header" id="myHeader">
@@ -27,6 +29,10 @@
 					<router-link to="/login">{{$t("message.login.login")}}</router-link>
 					/<router-link to="/register">{{$t("message.login.register")}}</router-link>
 				</div>
+			</div>
+			<div class="langMod">
+				<a :class="lang=='EN'?'select':''" @click="langTabFn('EN')">[EN]</a>
+				<a :class="lang=='VN'||lang==null?'select':''" @click="langTabFn('VN')">[VN]</a>
 			</div>
 			<a href="/" class="logo"><img width="72" :src="this.logoUrl" /></a>
 		</div>
@@ -64,7 +70,7 @@ export default{
 			}],
 			showHead:true,
 			noShowList:[],
-			lang:this.$store.state.lang,
+			lang:this.$swallow.localStorageGet("lang"),
 			contactShow:true,
 			path:{
 				home:'',
@@ -101,7 +107,7 @@ export default{
 			
 		},
 		look:function(){
-			console.info(this.$store.state.lang);
+			
 		},
 		showTab:function(){//切换展示
 			for(var i = 0;i < this.noShowList.length;i++){
@@ -113,19 +119,30 @@ export default{
 			this.$swallow.delCookie('yen_u_key_');
 			this.isLogin = this.$swallow.isLogin();
 			this.$router.push('/')
-		}
+		},
+		getData:function(){
+			this.$fetch('login/info')
+			.then((response) => {
+				this.user = response.data
+			})
+
+		},
+		langTabFn:function(lang){
+			this.$swallow.localStorageSet("lang",lang)
+			window.history.go(0)
+		},
 	},
 	mounted:function(){
 		this.showTab()
 	},
 	watch:{
-		"$route":"showTab"
+		"$route": function (to, from) {
+			this.getData()
+	        this.showTab();
+	　　}
 	},
 	created(){
-		this.$fetch('login/info')
-	      .then((response) => {
-	      	this.user = response.data
-	      })
+		this.getData()
 	},
 }
 </script>

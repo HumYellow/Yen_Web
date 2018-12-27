@@ -20,32 +20,32 @@
 			<router-link to="/placeOrder" class="homeMenuModBox">
 				<div class="homeMenuModBoxPic">
 					<div class="homeMenuModText">
-						<h4>Miễn phí thiết kế</h4>
-						<p>Nhận 03 phương án thiết kế</p>
+						<h4>{{$t("message.home.homeMenuTitle1")}}</h4>
+						<p>{{$t("message.home.homeMenuText1")}}</p>
 					</div>
 				</div>
 			</router-link>
 			<router-link to="/placeOrder" class="homeMenuModBox">
 				<div class="homeMenuModBoxPic">
 					<div class="homeMenuModText">
-						<h4>Miễn phí báo giá</h4>
-						<p>Dự toán chi phí thiết kế</p>
+						<h4>{{$t("message.home.homeMenuTitle2")}}</h4>
+						<p>{{$t("message.home.homeMenuText2")}}</p>
 					</div>
 				</div>
 			</router-link>
 			<router-link to="/placeOrder" class="homeMenuModBox">
 				<div class="homeMenuModBoxPic">
 					<div class="homeMenuModText">
-						<h4>Thiết kế hoàn thiện</h4>
-						<p>Mở rộng tối đa không gian</p>
+						<h4>{{$t("message.home.homeMenuTitle3")}}</h4>
+						<p>{{$t("message.home.homeMenuText3")}}</p>
 					</div>
 				</div>
 			</router-link>
 			<router-link to="/guarantee" class="homeMenuModBox">
 				<div class="homeMenuModBoxPic">
 					<div class="homeMenuModText">
-						<h4>Thi công trước, thanh toán sau </h4>
-						<p>Đội ngũ giám sát chất lượng chuyên nghiệp</p>
+						<h4>{{$t("message.home.homeMenuTitle4")}}</h4>
+						<p>{{$t("message.home.homeMenuText4")}}</p>
 					</div>
 				</div>
 			</router-link>

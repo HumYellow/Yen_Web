@@ -1,6 +1,7 @@
 <style type="text/css">
-#placeOrderBox{background:url('/static/image/vnImage/placeOrderBg.png') center no-repeat;height:712px;min-height:78vh;}
-.placeOrderBoxCenter{position:relative;top:200px;width:1060px;margin:0 auto;border-radius:10px;box-shadow: 2px -1px 15px #e9e9e9;background:#fff;}
+#placeOrderBox{background:url('/static/image/placeOrderBg.jpg') center no-repeat;height:712px;min-height:78vh;}
+.placeOrderBgText img{margin:0 auto;padding:50px 0;}
+.placeOrderBoxCenter{width:1060px;margin:0 auto;border-radius:10px;box-shadow: 2px -1px 15px #e9e9e9;background:#fff;}
 .placeOrderBox{margin:0 auto;padding:60px 60px 60px 6px;box-sizing: border-box;position:relative;}
 
 .placeOrderBox .placeOrderCity{height:5vw;}
@@ -21,6 +22,9 @@
 </style>
 <template>
 	<div id="placeOrderBox">
+		<div class="placeOrderBgText">
+			<img :src="$t('message.placeOrder.placeOrderBg')" />
+		</div>
 		<div class="bodyCenter placeOrderBoxCenter clear">
 			<div class="placeOrderBox">
 				<div class="placeOrderModBox clear">
@@ -142,7 +146,7 @@ export default {
 				if(data[a] == ''){
 					this.contSub = false
 					let nullName;
-					if(a == 'userName' && a == 'phone'){
+					if(a == 'userName' || a == 'phone'){
 						nullName = this.$t('message.login.phone')
 					}else if(a == 'name'){
 						nullName = this.$t('message.placeOrder.name')

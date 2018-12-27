@@ -19,12 +19,15 @@ import strategyList from '@/page/strategyList'
 import strategyDetails from '@/page/strategyDetails'
 import guarantee from '@/page/guarantee'
 import placeOrder from '@/page/placeOrder'
+
 import myCenter from '@/page/myCenter'
 import myCenterHome from '@/components/myCenter/MyCenterHome/MyCenterHome'
 import collectDesign from '@/components/myCenter/myCenterCollect/collectDesign'
 import collectCompany from '@/components/myCenter/myCenterCollect/collectCompany'
 import myDesignList from '@/components/myCenter/myDesign/myDesignList'
 import myDesignRevise from '@/components/myCenter/myDesign/myDesignRevise'
+import modifyPhone from '@/components/myCenter/modifyPhone/modifyPhone'
+import modifyPhoneFinish from '@/components/myCenter/modifyPhone/modifyPhoneFinish'
 
 import aboutYen from '@/page/aboutYen'
 import termsService from '@/components/aboutYen/termsService'
@@ -203,6 +206,20 @@ export default new Router({
           requireLogin:true,
         },
         component: personalData
+      },{
+        path: 'modifyPhone',
+        name: 'modifyPhone',
+        meta:{
+          requireLogin:true,
+        },
+        component: modifyPhone
+      },{
+        path: 'modifyPhoneFinish',
+        name: 'modifyPhoneFinish',
+        meta:{
+          requireLogin:true,
+        },
+        component: modifyPhoneFinish
       },]
       
     },

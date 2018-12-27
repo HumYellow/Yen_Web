@@ -9,10 +9,13 @@
 .personalDataMod .acreageDesc{border:1px solid #C9C9C9;width:292px;}
 .personalDataMod .acreageDesc span{height:25px;line-height:25px;display:inline-block;}
 .personalDataMod .personalDataDesc input{width:87%;height:22px;line-height:22px;float:left;border:none;outline:none;margin-left:2%; }
+.personalDataMod.personalDataPhone .personalDataDesc{width:auto;}
 .personalDataMod .styleDesc span{float:left;display:inline-block;height:25px;line-height:25px;padding-left:20px;background:url('/static/image/myCenter/scheduleShow.png') left center no-repeat;background-size:15px 15px;margin-right:30px;}
 .personalDataMod .styleDesc span.select{background:url('/static/image/myCenter/scheduleShowSelect.png') left center no-repeat;background-size:15px 15px;}
 .personalDataMod .fileImageBox{height:auto;}
 .personalDataMod .personalDataDesc .headPic{width:80px;height:80px;float:left;}
+.personalDataMod .personalDataDesc .showPhone{display: flex;justify-content: flex-start;align-items: center;color:#333;font-size:12px;}
+.personalDataMod .personalDataDesc .showPhone span{margin-right:10px;}
 .personalDataMod .personalDataDesc .fileImageBtn{float:left;position:relative;border:1px solid #3FBB87;width:140px;height:30px;line-height:30px;text-align:center;border-radius:5px;margin:20px;}
 .personalDataMod .personalDataDesc .fileImageBtn a{color:#3FBB87;font-size:12px;}
 .personalDataMod .personalDataDesc .fileImageBtn input{opacity: 0;width:100%;height:100%;position:absolute;left:0;top:0;cursor:pointer }
@@ -20,8 +23,18 @@
 </style>
 <template>
 	<div id="personalData">
-		<div class="personalDataMod clear">
-			<div class="personalDataTitle">{{$t("message.myCenter.personalData.phone")}}:</div><div class="personalDataDesc">{{this.personalData.phone}}</div>
+		<div class="personalDataMod personalDataPhone clear">
+			<div class="personalDataTitle">{{$t("message.myCenter.personalData.phone")}}:</div>
+			<div class="personalDataDesc">
+				{{this.personalData.phone}}
+				<div class="showPhone">
+					<span @click="showPhoneTab">
+						<img v-if="this.personalData.showPhone==1" width="15" src="/static/image/readSelect.png" />
+						<img v-else width="15" src="/static/image/readNoSelect.png" />
+					</span>
+					{{$t("message.myCenter.personalData.showPhoneText")}}
+				</div>
+			</div>
 		</div>
 		<div class="personalDataMod clear">
 			<div class="personalDataTitle">{{$t("message.myCenter.personalData.city")}}:</div>
@@ -212,8 +225,16 @@ export default {
 					})
 				}
 			});
-
-
+		},
+		showPhoneTab:function(){
+        	var isShowPhone = this.personalData.showPhone?0:1
+        	this.$post('/home/member/updateShowPhoneData',{//发布头像
+				showPhone:isShowPhone
+			})
+			.then((res)=>{
+        		this.$set(this.personalData,'showPhone', isShowPhone)
+				
+			})
 
         }
 	},

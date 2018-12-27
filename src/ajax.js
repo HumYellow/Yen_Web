@@ -57,6 +57,7 @@ axios.interceptors.response.use(
  */
 
 export function fetch(url,params={}){
+  params.langue = swallow.localStorageGet('lang')
   return new Promise((resolve,reject) => {
     axios.get(url,{
       params:params
@@ -79,6 +80,7 @@ export function fetch(url,params={}){
  */
 
  export function post(url,data = {}){
+  data.langue = swallow.localStorageGet('lang')
    return new Promise((resolve,reject) => {
      axios.post(url,data,axiosJsonConfig)
           .then(response => {

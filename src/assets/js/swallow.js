@@ -40,6 +40,29 @@ swallow.move = function(){
 	document.body.style.overflow='';//出现滚动条
 	document.removeEventListener("touchmove",swallow.mo,false);
 }
+/*localStorage操作*/
+swallow.localStorageSet = function(k,v){
+    localStorage.setItem(k,v)
+}
+swallow.localStorageGet = function(k){
+    let v = localStorage.getItem(k)
+    return v
+}
+swallow.localStorageClear = function(k){
+    localStorage.clear(k)
+}
+Array.prototype.indexOf = function(val) {
+  for (var i = 0; i < this.length; i++) {
+    if (this[i] == val) return i;
+  }
+  return -1;
+};
+Array.prototype.remove = function(val) {
+  var index = this.indexOf(val);
+  if (index > -1) {
+    this.splice(index, 1);
+  }
+};
 swallow.isIE = function() {
     var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串  
     var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器  

@@ -49,10 +49,8 @@ export default {
 		}
 	},
 	mounted(){
-		document.title = ''
 	},
 	created() {
-		console.info(this.$route.path)
 	},
 	watch:{
 		'$route':'linkListFn'

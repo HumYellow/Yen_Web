@@ -2,11 +2,7 @@
 .strategyProcess .processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;width:16px;height:18px;margin:0 auto 10px;}
 .strategyProcess .processMod{float:left;width:33%;}
 .strategyProcess .processMod:nth-child(2){margin:0 .5%;}
-.strategyProcess .processMod .processModBg{height:250px;}
-.strategyProcess .processMod:nth-child(1) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess1.png") no-repeat;background-size:100% 100%;}
-.strategyProcess .processMod:nth-child(2) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess2.png") no-repeat;background-size:100% 100%;}
-.strategyProcess .processMod:nth-child(3) .processModBg{background:url("https://s3.ap-southeast-1.amazonaws.com/yenstatic/image/strategyProcess3.png") no-repeat;background-size:100% 100%;}
-
+.strategyProcess .processMod .processModBg{height:250px;overflow:hidden}
 .strategyProcess .processMod:nth-child(1){background-color:#fefff4;}
 .strategyProcess .processMod:nth-child(2){background-color:#f9fffc;}
 .strategyProcess .processMod:nth-child(3){background-color:#f5fcff;}
@@ -44,7 +40,9 @@
 	<div class="strategyProcess strategyMod clear">
 		<div class="process clear">
 			<div class="processMod clear">
-				<div class="processModBg"></div>
+				<div class="processModBg">
+					<img width="100%" :src="$t('message.strategy.strategMenu.strategMenuHeadPic1')" />
+				</div>
 				<router-link to="/strategyList/1">
 					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.takeRoom")}}</div>
 				</router-link>
@@ -59,7 +57,9 @@
 				</router-link>
 			</div>
 			<div class="processMod clear">
-				<div class="processModBg"></div>
+				<div class="processModBg">
+					<img width="100%" :src="$t('message.strategy.strategMenu.strategMenuHeadPic2')" />
+				</div>
 				<router-link to="/strategyList/5">
 					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.alter")}}</div>
 				</router-link>
@@ -86,7 +86,9 @@
 				</router-link>
 			</div>
 			<div class="processMod clear">
-				<div class="processModBg"></div>
+				<div class="processModBg">
+					<img width="100%" :src="$t('message.strategy.strategMenu.strategMenuHeadPic3')" />
+				</div>
 				<router-link to="/strategyList/12">
 					<div class="icon"></div><div class="text">{{$t("message.strategy.strategType.softDc")}}</div>
 				</router-link>
