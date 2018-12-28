@@ -89,6 +89,7 @@ module.exports={
         placeOrderBg:'/static/image/placeOrderBg_VN.png',
     },
     aboutUs:{
+        aboutYEN:'Về YEN',
     	inputCompanyName:'Tên Công ty',
     	inputContactName:'Số điện thoại',
     	inputTelephoneNumber:'Người liên hệ',

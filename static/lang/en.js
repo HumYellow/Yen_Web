@@ -90,6 +90,7 @@ module.exports={
 
     },
     aboutUs:{
+        aboutYEN:'About YEN',
     	inputCompanyName:'Input company name',
     	inputContactName:'Input contact name',
     	inputTelephoneNumber:'Input telephone number'
