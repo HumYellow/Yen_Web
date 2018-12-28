@@ -16,7 +16,6 @@
   "dependencies": {
     "axios": "^0.17.1",
     "element-ui": "^2.3.3",
-    "jquery": "^2.2.3",
     "json-server": "^0.14.0",
     "qs": "^6.5.2",
     "viewerjs": "^1.2.0",

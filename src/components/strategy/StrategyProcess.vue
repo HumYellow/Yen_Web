@@ -1,5 +1,5 @@
 <style type="text/css">
-.strategyProcess .processMod a .icon{background:url("../../../static/image/strategyProcess.png") no-repeat;width:16px;height:18px;margin:0 auto 10px;}
+.strategyProcess .processMod a .icon{background:url("/static/image/strategyProcess.png") no-repeat;width:16px;height:18px;margin:0 auto 10px;}
 .strategyProcess .processMod{float:left;width:33%;}
 .strategyProcess .processMod:nth-child(2){margin:0 .5%;}
 .strategyProcess .processMod .processModBg{height:250px;overflow:hidden}

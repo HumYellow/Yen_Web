@@ -9,7 +9,7 @@
 	<div v-if="companyDetailsDesign.length > 0" class="companyDetailsDesign companyDetailsMod clear">
 		<h3>{{$t("message.company.designCases")}}</h3>
 		<div class="companyDetailsDesignMod clear">
-			<router-link :to="'/designDetails/'+design.id" v-for="design in companyDetailsDesign" class="designMod">
+			<router-link :to="'/designDetails/'+design.id" v-for="(design,index) in companyDetailsDesign" :key="index" class="designMod">
 				<div class="companyDetailsDesignBox"><img width="100%" :src="design.img" /></div>
 				<div class="designModDesc">
 					<p class="clear">

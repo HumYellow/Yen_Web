@@ -42,7 +42,7 @@
 		<div v-if="this.scheduleDesc">
 			<h3>{{$t("message.myCenter.myOrder")}}</h3>
 			<div class="myCenterScheduleMod">
-				<h4 class="projectBtn" :data-swich="scheduleDesc.id == list.id?'select':''" v-for="list in projectList" @click="getProject(list.id)">{{$t("message.myCenter.project")}}:{{list.id}}</h4>
+				<h4 class="projectBtn" :data-swich="scheduleDesc.id == list.id?'select':''" v-for="list in projectList" @click="getProject(list.id)">{{$t("message.myCenter.project")}}:{{list.orderId}}</h4>
 				<div class="scheduleBox">
 					<div class="scheduleDesc clear">
 						<div class="scheduleDescMod">{{$t("message.myCenter.projectId")}}：<span>{{scheduleDesc.id}}</span></div>

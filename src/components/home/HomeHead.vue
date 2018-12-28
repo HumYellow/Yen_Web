@@ -9,7 +9,7 @@
 <template>
 	<div id="homeHead">
 		<swiper class="swiperHead" :options="swiperOption">
-			<swiper-slide v-for="(slide ,index) in swiperSlides">
+			<swiper-slide v-for="(slide ,index) in swiperSlides" :key="index">
 				<a :href="slide.link">
 					<img :style="'background-image:url('+slide.img+')'" width="100%" height="100%" />
 				</a>

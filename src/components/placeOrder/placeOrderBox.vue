@@ -175,7 +175,6 @@ export default {
 						title:this.$t('message.tips.titleMsg'),
 						btn:this.$t('message.tips.ok')
 					})
-
 				}
 					
 			})

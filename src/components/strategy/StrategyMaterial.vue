@@ -19,7 +19,7 @@ overflow: hidden}
 	<div v-if="strategyMaterial.length != 0" class="strategyMaterial strategyMod clear">
 		<div class="strategyTitle"><h3>{{$t("message.strategy.materialSelectionManual")}}</h3></div>
 		<div class="strategyMaterialList clear">
-			<router-link :to="'/strategyDetails/'+mod.relatedId" v-for="mod in strategyMaterial" class="strategyMaterialMod clear">
+			<router-link :to="'/strategyDetails/'+mod.relatedId" v-for="(mod,index) in strategyMaterial" :key="index" class="strategyMaterialMod clear">
 				<div class="pic"><img width="100%" :src="mod.img" /></div>
 				<div class="text">
 					<h4>{{mod.title}}</h4>

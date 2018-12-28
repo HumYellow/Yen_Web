@@ -21,7 +21,7 @@
 <template>
 	<div id="designHead">
 		<swiper class="swiperHead" :options="swiperOption">
-			<swiper-slide v-for="(slide ,index) in swiperSlides">
+			<swiper-slide v-for="(slide ,index) in swiperSlides" :key="index">
 				<a :href="slide.link">
 					<img :style="'background-image:url('+slide.img+')'" width="100%" height="100%" />
 				</a>
@@ -31,10 +31,10 @@
 			<div class="swiper-button-next swiper-button-white" slot="button-next"></div>
 		</swiper>
 		<div class="designTypeHeadList">
-			<div v-for="designFilter in designFilterList" class="designTypeTable clear">
+			<div v-for="(designFilter,index) in designFilterList" :key="index" class="designTypeTable clear">
 				<div class="designTypeTitle">{{designFilter.name}}</div>
 				<div class="designTypeMenuList clear">
-					<router-link :to="{path: '/designType', query:{menuId:designFilter.designRangeId,styleId:subTypeList.designTypeId}}" v-for="(subTypeList ,index) in designFilter.subTypeList" 
+					<router-link :to="{path: '/designType', query:{menuId:designFilter.designRangeId,styleId:subTypeList.designTypeId}}" v-for="(subTypeList ,index) in designFilter.subTypeList"  :key="index"
 						:class="subTypeList.designTypeId==designFilter.select?'select':''">
 						{{subTypeList.name}}
 					</router-link>

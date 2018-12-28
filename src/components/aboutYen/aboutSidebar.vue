@@ -13,7 +13,7 @@
 			<p class="mt10">About YEN</p>
 		</div>
 		<div class="aboutSidebarMenu">
-			<router-link :to="link.src" replace :class="thisName == link.name?'select':''" v-for="link in linkList">{{link.title}}</router-link>
+			<router-link :to="link.src" replace :class="thisName == link.name?'select':''" v-for="(link,index) in linkList" :key="index">{{link.title}}</router-link>
 			
 		</div>
 	</div>

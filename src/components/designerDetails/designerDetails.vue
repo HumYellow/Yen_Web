@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="designerPicList clear">
-			<router-link :to="'/designDetails/'+design.designAtlasId" class="designPicListMod" v-for="design in designList">
+			<router-link :to="'/designDetails/'+design.designAtlasId" class="designPicListMod" v-for="(design,index) in designList" :key="index">
 				<img width="100%" :src="design.img" />
 				<div class="designName clear">
 					<span class="left">{{design.name}}</span>
