@@ -3,7 +3,7 @@ import swallow from './assets/js/swallow.js'
 import router from './router'
 import qs from 'qs'
 
-axios.defaults.timeout = 5000;
+axios.defaults.timeout = 60000;
 axios.defaults.baseURL = process.env.API_ROOT;
 /*process.env.API_ROOT*/
 var axiosJsonConfig = {

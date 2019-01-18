@@ -4,10 +4,7 @@
 .strategyListCenter .articlePic{float:left;width:28%;margin-right:2%;}
 .strategyListCenter .articleText{float:left;width:70%;}
 .strategyListCenter .articleTitle{padding:20px 0;color:#404040;}
-.strategyListCenter .articleDesc{color:#a3a3a3;font-size:12px;display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 6;
-overflow: hidden;}
+.strategyListCenter .articleDesc{color:#a3a3a3;font-size:12px;height:86px;overflow: hidden;}
 .strategyListCenter .noStrategy{wdith:100%;text-align:center;border:1px solid #9a9a9a;color:#9a9a9a;height:40px; line-height:40px;}
 </style>
 <template>
@@ -16,7 +13,7 @@ overflow: hidden;}
 			<router-link :to="'/strategyDetails/'+center.id">
 				<div class="articlePic"><img width="100%" :src="center.img" /></div>
 				<div class="articleText">
-					<h3 class="articleTitle">{{center.title}}</h3>
+					<h3 class="articleTitle aloneTextEllipsis">{{center.title}}</h3>
 					<p class="articleDesc">{{center.summary}}</p>
 				</div>
 			</router-link>

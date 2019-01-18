@@ -28,7 +28,7 @@
 .scheduleList .companyList{width:80%;margin-top:10px;}
 .scheduleList .companyListBox{float:left;width:33%;text-align:center;}
 .scheduleList .companyListBox a{display:block;}
-.scheduleList .companyPicBox{height:120px;overflow:hidden;}
+.scheduleList .companyPicBox{overflow:hidden;}
 .scheduleList .companyListBox p{margin-top:10px;}
 .presentationPicBox{margin-top:10px;}
 .noProject{width:30%;width:30%;margin:0 auto;}
@@ -42,10 +42,10 @@
 		<div v-if="this.scheduleDesc">
 			<h3>{{$t("message.myCenter.myOrder")}}</h3>
 			<div class="myCenterScheduleMod">
-				<h4 class="projectBtn" :data-swich="scheduleDesc.id == list.id?'select':''" v-for="list in projectList" @click="getProject(list.id)">{{$t("message.myCenter.project")}}:{{list.orderId}}</h4>
+				<h4 class="projectBtn" :data-swich="scheduleDesc.orderId == list.orderId?'select':''" v-for="list in projectList" @click="getProject(list.orderId)">{{$t("message.myCenter.project")}}:{{list.orderId}}</h4>
 				<div class="scheduleBox">
 					<div class="scheduleDesc clear">
-						<div class="scheduleDescMod">{{$t("message.myCenter.projectId")}}：<span>{{scheduleDesc.id}}</span></div>
+						<div class="scheduleDescMod">{{$t("message.myCenter.projectId")}}：<span>{{scheduleDesc.orderId}}</span></div>
 						<div class="scheduleDescMod">{{$t('message.placeOrder.name')}}：<span>{{scheduleDesc.name}}</span></div>
 						<div class="scheduleDescMod">{{$t('message.placeOrder.phone')}}：<span>{{scheduleDesc.phone}}</span></div>
 					</div>

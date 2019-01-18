@@ -24,6 +24,7 @@ input,select{vertical-align:middle;outline: none;}
 .clear:after{clear:both;}
 .clear{*zoom:1;/*IE/7/6*/}
 
+.textCenter{text-align:center;}
 .left{float:left;}
 .right{float:right;}
 .mt5{margin-top:5px;}
@@ -44,6 +45,8 @@ input,select{vertical-align:middle;outline: none;}
 .mr50{margin-right:50px;}
 
 .bodyCenter{width:1280px; margin:0 auto;}
+/* 文字处理 */
+.aloneTextEllipsis{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 
 /* select{appearance:none;
 -moz-appearance:none;

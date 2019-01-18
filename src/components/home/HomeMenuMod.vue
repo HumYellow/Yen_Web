@@ -1,6 +1,6 @@
 <style type="text/css">
 .homeMenuMod{width:100%;background:#f5f5f5;padding:20px 0;}
-.homeMenuMod .homeMenuModBox{width:23.4%;margin:0 .8%;float:left;box-sizing: border-box;background:#fff;height:115px;}
+.homeMenuMod .homeMenuModBox{width:24%;margin:0 .5%;float:left;box-sizing: border-box;background:#fff;height:115px;}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxText{float:left;width:70%;}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxText h3{color:#333333;margin:10px 0;font-size:16px;}
 .homeMenuMod .homeMenuModBox .homeMenuModBoxText p{color:#6a6a6a;font-size:12px;}

@@ -1,8 +1,9 @@
 <style type="text/css">
 .companyDetailsDesc{width:100%;padding:30px 50px;box-sizing: border-box;background:#fff;}
-.companyDetailsDesc .companyDetailsDescLeft{float:left;height:120px;width:120px;}
-.companyDetailsDesc .companyDetailsDescRight{box-sizing: border-box;margin-left:20px;padding:10px 20px;height:100%;float:left;}
-.companyDetailsDesc .companyDetailsDescRight .companyDetailsDescText h2{font-size:24px;color:#333;}
+.companyDetailsDescBox{position:relative;}
+.companyDetailsDesc .companyDetailsDescLeft{position:absolute;left:0;top:0;height:120px;width:120px;}
+.companyDetailsDesc .companyDetailsDescRight{box-sizing: border-box;margin-left:20px;padding:10px 20px;height:100%;padding-left:130px;}
+.companyDetailsDesc .companyDetailsDescRight .companyDetailsDescText h2{font-size:24px;color:#333;line-height:28px;}
 .companyDetailsDesc .designCaseBox{margin-top:20px;}
 .companyDetailsDesc .designCaseBox .designCaseMod{text-align:center;margin-right:40px;float:left;}
 .companyDetailsDesc .designCaseBox .designCase{font-size:16px;color:#666; margin-top:5px;line-height:20px;}
@@ -15,13 +16,13 @@
 </style>
 <template>
 	<div class="companyDetailsDesc">
-		<div class="clear">
+		<div class="companyDetailsDescBox">
 			<div class="companyDetailsDescLeft">
 				<img width="100%" :src="desc.img" />
 			</div>
 			<div class="companyDetailsDescRight">
 				<div class="companyDetailsDescText">
-					<h2>{{desc.name}}</h2>
+					<h2 class="aloneTextEllipsis">{{desc.name}}</h2>
 					<div class="designCaseBox clear">
 						<div class="designCaseMod">
 							<!-- <p class="num">{{desc.designCount}}</p> -->

@@ -31,7 +31,7 @@
 					</div>
 					<div class="inputMod clear">
 						<span class="keyName">{{$t("message.placeOrder.acreage")}}:</span>
-						<input class="formBox" placeholder="㎡" v-model="subData.average" onkeyup="value=value.replace(/[^\d]/g,'')" value="" :onkeydown='keySub' />
+						<input class="formBox" placeholder="㎡" v-model="subData.acreage" onkeyup="value=value.replace(/[^\d]/g,'')" value="" :onkeydown='keySub' />
 					</div>
 					<div class="inputMod clear">
 						<span class="keyName">{{$t("message.placeOrder.houseType")}}:</span>
@@ -65,9 +65,9 @@
 					<div class="inputMod clear">
 						<span class="keyName">{{$t("message.placeOrder.type")}}:</span>
 						<div class="formBox houseType">
-							<input type="radio" name="houseType" v-model="subData.acreage" value="1" />
+							<input type="radio" name="houseType" v-model="subData.type" value="1" />
 							<span>{{$t("message.placeOrder.newHouse")}}</span>
-							<input type="radio" name="houseType" v-model="subData.acreage" value="2" />
+							<input type="radio" name="houseType" v-model="subData.type" value="2" />
 							<span>{{$t("message.placeOrder.rebuild")}}</span>
 						</div>
 					</div>
@@ -88,7 +88,7 @@ export default{
 			subData:{
 			  	phone:'',
 				username:'',
-				acreage:'1',
+				acreage:'',
 				houseType1:'1',
 				houseType2:'1',
 				houseType3:'1',
@@ -98,7 +98,7 @@ export default{
 			initialData:{
 			  	phone:'',
 				username:'',
-				acreage:'1',
+				acreage:'',
 				houseType1:'1',
 				houseType2:'1',
 				houseType3:'1',

@@ -4,14 +4,8 @@
 .strategyMaterialMod .pic ,.strategyMaterialMod .text{float:left;}
 .strategyMaterialMod .pic{width:48%;margin-right:2%;height:145px;overflow:hidden;}
 .strategyMaterialMod .text{width:50%;font-size:12px;overflow: hidden;padding:10px 0;}
-.strategyMaterialMod .text h4{font-size:16px;line-height:20px;margin-bottom:15px;display: -webkit-box;
--webkit-box-orient: vertical;color:#333;
--webkit-line-clamp: 1;
-overflow: hidden}
-.strategyMaterialMod .text p{line-height:16px;display: -webkit-box;color:#666;font-size:14px;
--webkit-box-orient: vertical;
--webkit-line-clamp: 6;
-overflow: hidden}
+.strategyMaterialMod .text h4{font-size:16px;line-height:20px;margin-bottom:15px;color:#333;}
+.strategyMaterialMod .text p{line-height:16px;color:#666;font-size:14px;height:80px;overflow: hidden}
 
 
 </style>
@@ -22,7 +16,7 @@ overflow: hidden}
 			<router-link :to="'/strategyDetails/'+mod.relatedId" v-for="(mod,index) in strategyMaterial" :key="index" class="strategyMaterialMod clear">
 				<div class="pic"><img width="100%" :src="mod.img" /></div>
 				<div class="text">
-					<h4>{{mod.title}}</h4>
+					<h4 class="aloneTextEllipsis">{{mod.title}}</h4>
 					<p>{{mod.summary}}</p>
 				</div>
 			</router-link>
