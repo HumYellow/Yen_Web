@@ -157,7 +157,7 @@ export default {
 					}else if(a == 'type'){
 						nullName = this.$t('message.placeOrder.type')
 					}
-					this.$layer.alert(nullName+this.$t('message.tips.contNull'),{
+					this.$layer.alert(nullName+' '+this.$t('message.tips.contNull'),{
 						title:this.$t('message.tips.titleMsg'),
 						btn:this.$t('message.tips.ok')
 					})

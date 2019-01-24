@@ -5,7 +5,7 @@
 .geomancyMod .pic{width:48%;margin-right:2%;height:145px;overflow:hidden;}
 .geomancyMod .text{width:50%;font-size:12px;overflow: hidden;padding:10px 0;}
 .geomancyMod .text h4{font-size:16px;line-height:22px;margin-bottom:15px;color:#333;}
-.geomancyMod .text p{line-height:16px;color:#666;height:80px;overflow: hidden}
+.geomancyMod .text p{line-height:16px;color:#666;height:80px;overflow: hidden;font-size:14px;}
 </style>
 <template>
 	<div v-if="geomancy.length != 0" class="geomancy strategyMod clear">
