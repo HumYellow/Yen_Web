@@ -160,6 +160,7 @@ module.exports={
     	evaluate:'Evaluate',
     	evaluated:'Evaluated',
     	auditting:'Auditting',
+        downTips:'Drop down to the bottom,scan the QR code and download Yen App,then you can check your order process anytime and anywhere.',
     	inputPictureDescription:'Input picture description',
     	uploadSize:'Please upload pictures of size not exceeding 2000KB.',
     	noMorePictures:'No more than 20 pictures',

@@ -1,11 +1,12 @@
 <style type="text/css">
-.myCenterSchedule{margin-top:40px;}
+.myCenterSchedule{margin-top:20px;}
 .myCenterSchedule h3{border-left:3px solid #0cb46a;margin:20px 0;padding-left:10px;}
 .myCenterSchedule .myCenterScheduleMod h4{padding:10px 30px;display:inline-block;position:relative;bottom:-1px;color:#0cb46a; font-weight:100;cursor:pointer}
 .myCenterSchedule .scheduleBox{padding:20px;border:1px solid #eee;}
 .myCenterSchedule .scheduleDesc{padding:10px 20px;background:#f8f8f8;}
 .myCenterSchedule .scheduleDescMod{float:left;color:#999;margin-right:40px; text-align:left;font-size:12px;}
 .myCenterSchedule .scheduleDescMod span{color:#000;}
+.myCenterSchedule .downTips{box-sizing: border-box;padding:10px 20px; font-size:12px; background:#f8f8f8; color:#333;}
 
 .scheduleCneter{margin-top:15px;}
 .scheduleList{width:100%;}
@@ -39,6 +40,7 @@
 </style>
 <template>
 	<div class="myCenterSchedule clear">
+		<div class="downTips">{{$t("message.myCenter.downTips")}}</div>
 		<div v-if="this.scheduleDesc">
 			<h3>{{$t("message.myCenter.myOrder")}}</h3>
 			<div class="myCenterScheduleMod">

@@ -26,7 +26,7 @@
 			<img width="50%" src="/static/image/loginImg.png" />
 			<div class="loginBox">
 				<div class="loginMod">
-					<input @keyup.13="forgetPassword()" :class="phone == '' && this.null?'null':''" v-model="phone" :placeholder="$t('message.login.phone')" onkeyup="value=value.replace(/[^\d]/g,'')" />
+					<input @keyup.13="forgetPassword()" :class="phone == '' && this.null?'null':''" v-model="phone" :placeholder="$t('message.login.phone')" onkeyup="value=value.replace(/[^\d]/g,'')" maxlength="10" />
 				</div>
 				<div class="loginMod verifyMod clear">
 					<input @keyup.13="forgetPassword()" :class="dynamicCode == '' && this.null?'null':''" v-model="dynamicCode" :placeholder="$t('message.login.inputVerificationCode')" maxlength="4" onkeyup="value=value.replace(/[^\d]/g,'')" />
